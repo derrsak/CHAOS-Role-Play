@@ -75,7 +75,8 @@
 ## 📂 Установка
 
 ```bash
-git clone https://github.com/derrsak/cef-full-update.git
-cd cef-full-update
+git clone https://github.com/derrsak/CHAOS-Role-Play.git
+cd CHAOS-Role-Play
 npm install
-npm run dev
+cd react
+npm install
