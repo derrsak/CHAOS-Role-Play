@@ -1,0 +1,3400 @@
+#blackjack {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+#casino-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: white;
+    font-family: "UniNeue";
+    font-style: normal;
+    font-weight: bold; }
+    #casino-main .box-date {
+      z-index: 1000;
+      position: absolute;
+      font-style: normal;
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-end;
+      color: white; }
+      @media (max-width: 799px) {
+        #casino-main .box-date {
+          top: 22.5px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .box-date {
+          top: 25px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .box-date {
+          top: 32.25px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .box-date {
+          top: 34.25px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .box-date {
+          top: 37.5px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .box-date {
+          top: 35px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .box-date {
+          top: 42.5px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .box-date {
+          top: 40px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .box-date {
+          top: 47.5px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .box-date {
+          top: 50px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .box-date {
+          top: 50px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .box-date {
+          top: 62.5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .box-date {
+          top: 67.5px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .box-date {
+          top: 65px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .box-date {
+          top: 62.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .box-date {
+          top: 82.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .box-date {
+          top: 100px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .box-date {
+          top: 82.5px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .box-date {
+          top: 112.5px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .box-date {
+          top: 157.5px ; } }
+      @media (max-width: 799px) {
+        #casino-main .box-date {
+          right: 22.5px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .box-date {
+          right: 25px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .box-date {
+          right: 32.25px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .box-date {
+          right: 34.25px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .box-date {
+          right: 37.5px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .box-date {
+          right: 35px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .box-date {
+          right: 42.5px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .box-date {
+          right: 40px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .box-date {
+          right: 47.5px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .box-date {
+          right: 50px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .box-date {
+          right: 50px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .box-date {
+          right: 62.5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .box-date {
+          right: 67.5px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .box-date {
+          right: 65px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .box-date {
+          right: 62.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .box-date {
+          right: 82.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .box-date {
+          right: 100px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .box-date {
+          right: 82.5px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .box-date {
+          right: 112.5px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .box-date {
+          right: 157.5px ; } }
+      @media (max-width: 799px) {
+        #casino-main .box-date {
+          width: 62.1px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .box-date {
+          width: 69px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .box-date {
+          width: 89.01px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .box-date {
+          width: 94.53px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .box-date {
+          width: 103.5px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .box-date {
+          width: 96.6px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .box-date {
+          width: 117.3px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .box-date {
+          width: 110.4px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .box-date {
+          width: 131.1px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .box-date {
+          width: 138px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .box-date {
+          width: 138px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .box-date {
+          width: 172.5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .box-date {
+          width: 186.3px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .box-date {
+          width: 179.4px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .box-date {
+          width: 172.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .box-date {
+          width: 227.7px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .box-date {
+          width: 276px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .box-date {
+          width: 227.7px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .box-date {
+          width: 310.5px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .box-date {
+          width: 434.7px ; } }
+      @media (max-width: 799px) {
+        #casino-main .box-date {
+          font-size: 4.5px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .box-date {
+          font-size: 5px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .box-date {
+          font-size: 6.45px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .box-date {
+          font-size: 6.85px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .box-date {
+          font-size: 7.5px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .box-date {
+          font-size: 7px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .box-date {
+          font-size: 8.5px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .box-date {
+          font-size: 8px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .box-date {
+          font-size: 9.5px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .box-date {
+          font-size: 10px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .box-date {
+          font-size: 10px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .box-date {
+          font-size: 12.5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .box-date {
+          font-size: 13.5px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .box-date {
+          font-size: 13px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .box-date {
+          font-size: 12.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .box-date {
+          font-size: 16.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .box-date {
+          font-size: 20px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .box-date {
+          font-size: 16.5px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .box-date {
+          font-size: 22.5px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .box-date {
+          font-size: 31.5px ; } }
+      @media (max-width: 799px) {
+        #casino-main .box-date {
+          line-height: 4.5px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .box-date {
+          line-height: 5px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .box-date {
+          line-height: 6.45px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .box-date {
+          line-height: 6.85px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .box-date {
+          line-height: 7.5px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .box-date {
+          line-height: 7px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .box-date {
+          line-height: 8.5px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .box-date {
+          line-height: 8px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .box-date {
+          line-height: 9.5px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .box-date {
+          line-height: 10px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .box-date {
+          line-height: 10px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .box-date {
+          line-height: 12.5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .box-date {
+          line-height: 13.5px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .box-date {
+          line-height: 13px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .box-date {
+          line-height: 12.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .box-date {
+          line-height: 16.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .box-date {
+          line-height: 20px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .box-date {
+          line-height: 16.5px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .box-date {
+          line-height: 22.5px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .box-date {
+          line-height: 31.5px ; } }
+      #casino-main .box-date .box-time {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        @media (max-width: 799px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 2.25px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 2.5px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 3.225px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 3.425px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 3.75px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 3.5px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 4.25px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 4px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 4.75px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 5px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 5px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 6.25px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 6.75px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 6.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 6.25px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 8.25px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 10px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 8.25px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 11.25px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .box-date .box-time .time {
+            margin-bottom: 15.75px ; } }
+        @media (max-width: 799px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 10.8px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 12px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 15.48px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 16.44px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 18px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 16.8px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 20.4px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 19.2px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 22.8px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 24px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 24px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 30px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 32.4px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 31.2px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 30px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 39.6px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 48px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 39.6px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 54px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .box-date .box-time .time {
+            font-size: 75.6px ; } }
+        @media (max-width: 799px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 10.8px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 12px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 15.48px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 16.44px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 18px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 16.8px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 20.4px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 19.2px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 22.8px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 24px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 24px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 30px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 32.4px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 31.2px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 30px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 39.6px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 48px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 39.6px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 54px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .box-date .box-time .time {
+            line-height: 75.6px ; } }
+    #casino-main .box-KeyInfo {
+      position: absolute; }
+      @media (max-width: 799px) {
+        #casino-main .box-KeyInfo {
+          top: 22.5px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .box-KeyInfo {
+          top: 25px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .box-KeyInfo {
+          top: 32.25px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .box-KeyInfo {
+          top: 34.25px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .box-KeyInfo {
+          top: 37.5px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .box-KeyInfo {
+          top: 35px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .box-KeyInfo {
+          top: 42.5px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .box-KeyInfo {
+          top: 40px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .box-KeyInfo {
+          top: 47.5px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .box-KeyInfo {
+          top: 50px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .box-KeyInfo {
+          top: 50px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .box-KeyInfo {
+          top: 62.5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .box-KeyInfo {
+          top: 67.5px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .box-KeyInfo {
+          top: 65px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .box-KeyInfo {
+          top: 62.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .box-KeyInfo {
+          top: 82.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .box-KeyInfo {
+          top: 100px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .box-KeyInfo {
+          top: 82.5px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .box-KeyInfo {
+          top: 112.5px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .box-KeyInfo {
+          top: 157.5px ; } }
+      @media (max-width: 799px) {
+        #casino-main .box-KeyInfo {
+          left: 22.5px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .box-KeyInfo {
+          left: 25px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .box-KeyInfo {
+          left: 32.25px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .box-KeyInfo {
+          left: 34.25px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .box-KeyInfo {
+          left: 37.5px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .box-KeyInfo {
+          left: 35px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .box-KeyInfo {
+          left: 42.5px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .box-KeyInfo {
+          left: 40px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .box-KeyInfo {
+          left: 47.5px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .box-KeyInfo {
+          left: 50px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .box-KeyInfo {
+          left: 50px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .box-KeyInfo {
+          left: 62.5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .box-KeyInfo {
+          left: 67.5px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .box-KeyInfo {
+          left: 65px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .box-KeyInfo {
+          left: 62.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .box-KeyInfo {
+          left: 82.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .box-KeyInfo {
+          left: 100px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .box-KeyInfo {
+          left: 82.5px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .box-KeyInfo {
+          left: 112.5px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .box-KeyInfo {
+          left: 157.5px ; } }
+    #casino-main .bet-block {
+      background: rgba(1, 22, 39, 0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative; }
+      @media (max-width: 799px) {
+        #casino-main .bet-block {
+          width: 180px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .bet-block {
+          width: 200px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .bet-block {
+          width: 258px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .bet-block {
+          width: 274px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .bet-block {
+          width: 300px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .bet-block {
+          width: 280px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .bet-block {
+          width: 340px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .bet-block {
+          width: 320px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .bet-block {
+          width: 380px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .bet-block {
+          width: 400px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .bet-block {
+          width: 400px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .bet-block {
+          width: 500px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .bet-block {
+          width: 540px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .bet-block {
+          width: 520px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .bet-block {
+          width: 500px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .bet-block {
+          width: 660px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .bet-block {
+          width: 800px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .bet-block {
+          width: 660px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .bet-block {
+          width: 900px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .bet-block {
+          width: 1260px ; } }
+      @media (max-width: 799px) {
+        #casino-main .bet-block {
+          padding-top: 14.4px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .bet-block {
+          padding-top: 16px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .bet-block {
+          padding-top: 20.64px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .bet-block {
+          padding-top: 21.92px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .bet-block {
+          padding-top: 24px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .bet-block {
+          padding-top: 22.4px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .bet-block {
+          padding-top: 27.2px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .bet-block {
+          padding-top: 25.6px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .bet-block {
+          padding-top: 30.4px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .bet-block {
+          padding-top: 32px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .bet-block {
+          padding-top: 32px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .bet-block {
+          padding-top: 40px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .bet-block {
+          padding-top: 43.2px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .bet-block {
+          padding-top: 41.6px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .bet-block {
+          padding-top: 40px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .bet-block {
+          padding-top: 52.8px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .bet-block {
+          padding-top: 64px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .bet-block {
+          padding-top: 52.8px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .bet-block {
+          padding-top: 72px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .bet-block {
+          padding-top: 100.8px ; } }
+      @media (max-width: 799px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 43.65px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 48.5px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 62.565px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 66.445px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 72.75px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 67.9px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 82.45px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 77.6px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 92.15px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 97px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 97px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 121.25px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 130.95px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 126.1px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 121.25px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 160.05px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 194px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 160.05px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 218.25px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .bet-block .icon-dollar {
+          font-size: 305.55px ; } }
+      @media (max-width: 799px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 10.35px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 11.5px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 14.835px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 15.755px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 17.25px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 16.1px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 19.55px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 18.4px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 21.85px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 23px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 23px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 28.75px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 31.05px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 29.9px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 28.75px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 37.95px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 46px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 37.95px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 51.75px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .bet-block .icon-dollar {
+          margin-bottom: 72.45px ; } }
+      @media (max-width: 799px) {
+        #casino-main .bet-block .e-win {
+          font-size: 7.2px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .bet-block .e-win {
+          font-size: 8px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .bet-block .e-win {
+          font-size: 10.32px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .bet-block .e-win {
+          font-size: 10.96px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .bet-block .e-win {
+          font-size: 12px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .bet-block .e-win {
+          font-size: 11.2px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .bet-block .e-win {
+          font-size: 13.6px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .bet-block .e-win {
+          font-size: 12.8px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .bet-block .e-win {
+          font-size: 15.2px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .bet-block .e-win {
+          font-size: 16px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .bet-block .e-win {
+          font-size: 16px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .bet-block .e-win {
+          font-size: 20px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .bet-block .e-win {
+          font-size: 21.6px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .bet-block .e-win {
+          font-size: 20.8px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .bet-block .e-win {
+          font-size: 20px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .bet-block .e-win {
+          font-size: 26.4px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .bet-block .e-win {
+          font-size: 32px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .bet-block .e-win {
+          font-size: 26.4px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .bet-block .e-win {
+          font-size: 36px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .bet-block .e-win {
+          font-size: 50.4px ; } }
+      @media (max-width: 799px) {
+        #casino-main .bet-block .e-win {
+          height: 14.4px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .bet-block .e-win {
+          height: 16px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .bet-block .e-win {
+          height: 20.64px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .bet-block .e-win {
+          height: 21.92px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .bet-block .e-win {
+          height: 24px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .bet-block .e-win {
+          height: 22.4px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .bet-block .e-win {
+          height: 27.2px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .bet-block .e-win {
+          height: 25.6px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .bet-block .e-win {
+          height: 30.4px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .bet-block .e-win {
+          height: 32px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .bet-block .e-win {
+          height: 32px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .bet-block .e-win {
+          height: 40px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .bet-block .e-win {
+          height: 43.2px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .bet-block .e-win {
+          height: 41.6px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .bet-block .e-win {
+          height: 40px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .bet-block .e-win {
+          height: 52.8px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .bet-block .e-win {
+          height: 64px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .bet-block .e-win {
+          height: 52.8px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .bet-block .e-win {
+          height: 72px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .bet-block .e-win {
+          height: 100.8px ; } }
+      @media (max-width: 799px) {
+        #casino-main .bet-block .text {
+          font-size: 14.4px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .bet-block .text {
+          font-size: 16px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .bet-block .text {
+          font-size: 20.64px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .bet-block .text {
+          font-size: 21.92px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .bet-block .text {
+          font-size: 24px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .bet-block .text {
+          font-size: 22.4px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .bet-block .text {
+          font-size: 27.2px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .bet-block .text {
+          font-size: 25.6px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .bet-block .text {
+          font-size: 30.4px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .bet-block .text {
+          font-size: 32px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .bet-block .text {
+          font-size: 32px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .bet-block .text {
+          font-size: 40px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .bet-block .text {
+          font-size: 43.2px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .bet-block .text {
+          font-size: 41.6px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .bet-block .text {
+          font-size: 40px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .bet-block .text {
+          font-size: 52.8px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .bet-block .text {
+          font-size: 64px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .bet-block .text {
+          font-size: 52.8px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .bet-block .text {
+          font-size: 72px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .bet-block .text {
+          font-size: 100.8px ; } }
+      @media (max-width: 799px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 10.8px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 12px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 15.48px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 16.44px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 18px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 16.8px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 20.4px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 19.2px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 22.8px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 24px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 24px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 30px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 32.4px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 31.2px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 30px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 39.6px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 48px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 39.6px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 54px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .bet-block .text {
+          margin-bottom: 75.6px ; } }
+      #casino-main .bet-block .bet-list {
+        flex-direction: row;
+        display: flex; }
+        @media (max-width: 799px) {
+          #casino-main .bet-block .bet-list {
+            width: 92.25px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .bet-block .bet-list {
+            width: 102.5px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .bet-block .bet-list {
+            width: 132.225px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .bet-block .bet-list {
+            width: 140.425px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .bet-block .bet-list {
+            width: 153.75px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .bet-block .bet-list {
+            width: 143.5px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .bet-block .bet-list {
+            width: 174.25px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .bet-block .bet-list {
+            width: 164px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .bet-block .bet-list {
+            width: 194.75px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .bet-block .bet-list {
+            width: 205px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .bet-block .bet-list {
+            width: 205px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .bet-block .bet-list {
+            width: 256.25px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .bet-block .bet-list {
+            width: 276.75px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .bet-block .bet-list {
+            width: 266.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .bet-block .bet-list {
+            width: 256.25px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-list {
+            width: 338.25px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-list {
+            width: 410px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-list {
+            width: 338.25px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-list {
+            width: 461.25px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .bet-block .bet-list {
+            width: 645.75px ; } }
+        #casino-main .bet-block .bet-list .bet {
+          background: rgba(27, 30, 40, 0.4);
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          @media (max-width: 799px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 13.5px ; } }
+          @media (min-width: 800px) and (max-width: 999px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 15px ; } }
+          @media (min-width: 1000px) and (max-width: 1151px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 19.35px ; } }
+          @media (min-width: 1152px) and (max-width: 1259px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 20.55px ; } }
+          @media (min-width: 1260px) and (max-width: 1349px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 22.5px ; } }
+          @media (min-width: 1350px) and (max-width: 1429px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 21px ; } }
+          @media (min-width: 1430px) and (max-width: 1589px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 25.5px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 24px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 28.5px ; } }
+          @media (min-width: 1900px) and (max-width: 2199px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 30px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 30px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 37.5px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 40.5px ; } }
+          @media (min-width: 2600px) and (max-width: 3499px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 39px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 37.5px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 49.5px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 60px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 49.5px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 67.5px ; } }
+          @media (min-width: 6000px) {
+            #casino-main .bet-block .bet-list .bet {
+              width: 94.5px ; } }
+          @media (max-width: 799px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 13.5px ; } }
+          @media (min-width: 800px) and (max-width: 999px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 15px ; } }
+          @media (min-width: 1000px) and (max-width: 1151px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 19.35px ; } }
+          @media (min-width: 1152px) and (max-width: 1259px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 20.55px ; } }
+          @media (min-width: 1260px) and (max-width: 1349px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 22.5px ; } }
+          @media (min-width: 1350px) and (max-width: 1429px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 21px ; } }
+          @media (min-width: 1430px) and (max-width: 1589px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 25.5px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 24px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 28.5px ; } }
+          @media (min-width: 1900px) and (max-width: 2199px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 30px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 30px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 37.5px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 40.5px ; } }
+          @media (min-width: 2600px) and (max-width: 3499px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 39px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 37.5px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 49.5px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 60px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 49.5px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 67.5px ; } }
+          @media (min-width: 6000px) {
+            #casino-main .bet-block .bet-list .bet {
+              height: 94.5px ; } }
+          @media (max-width: 799px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 0.45px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 800px) and (max-width: 999px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 0.5px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 1000px) and (max-width: 1151px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 0.645px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 1152px) and (max-width: 1259px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 0.685px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 1260px) and (max-width: 1349px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 0.75px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 1350px) and (max-width: 1429px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 0.7px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 1430px) and (max-width: 1589px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 0.85px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 0.8px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 0.95px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 1900px) and (max-width: 2199px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 1px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 1px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 1.25px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 1.35px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 2600px) and (max-width: 3499px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 1.3px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 1.25px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 1.65px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 2px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 1.65px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 2.25px solid rgba(193, 193, 193, 0.2); } }
+          @media (min-width: 6000px) {
+            #casino-main .bet-block .bet-list .bet {
+              border: 3.15px solid rgba(193, 193, 193, 0.2); } }
+          @media (max-width: 799px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 2.7px ; } }
+          @media (min-width: 800px) and (max-width: 999px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 3px ; } }
+          @media (min-width: 1000px) and (max-width: 1151px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 3.87px ; } }
+          @media (min-width: 1152px) and (max-width: 1259px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 4.11px ; } }
+          @media (min-width: 1260px) and (max-width: 1349px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 4.5px ; } }
+          @media (min-width: 1350px) and (max-width: 1429px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 4.2px ; } }
+          @media (min-width: 1430px) and (max-width: 1589px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 5.1px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 4.8px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 5.7px ; } }
+          @media (min-width: 1900px) and (max-width: 2199px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 6px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 6px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 7.5px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 8.1px ; } }
+          @media (min-width: 2600px) and (max-width: 3499px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 7.8px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 7.5px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 9.9px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 12px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 9.9px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 13.5px ; } }
+          @media (min-width: 6000px) {
+            #casino-main .bet-block .bet-list .bet {
+              border-radius: 18.9px ; } }
+          @media (max-width: 799px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 5.4px ; } }
+          @media (min-width: 800px) and (max-width: 999px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 6px ; } }
+          @media (min-width: 1000px) and (max-width: 1151px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 7.74px ; } }
+          @media (min-width: 1152px) and (max-width: 1259px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 8.22px ; } }
+          @media (min-width: 1260px) and (max-width: 1349px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 9px ; } }
+          @media (min-width: 1350px) and (max-width: 1429px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 8.4px ; } }
+          @media (min-width: 1430px) and (max-width: 1589px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 10.2px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 9.6px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 11.4px ; } }
+          @media (min-width: 1900px) and (max-width: 2199px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 12px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 12px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 15px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 16.2px ; } }
+          @media (min-width: 2600px) and (max-width: 3499px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 15.6px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 15px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 19.8px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 24px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 19.8px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 27px ; } }
+          @media (min-width: 6000px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-bottom: 37.8px ; } }
+          @media (max-width: 799px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 4.5px ; } }
+          @media (min-width: 800px) and (max-width: 999px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 5px ; } }
+          @media (min-width: 1000px) and (max-width: 1151px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 6.45px ; } }
+          @media (min-width: 1152px) and (max-width: 1259px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 6.85px ; } }
+          @media (min-width: 1260px) and (max-width: 1349px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 7.5px ; } }
+          @media (min-width: 1350px) and (max-width: 1429px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 7px ; } }
+          @media (min-width: 1430px) and (max-width: 1589px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 8.5px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 8px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 9.5px ; } }
+          @media (min-width: 1900px) and (max-width: 2199px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 10px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 10px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 12.5px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 13.5px ; } }
+          @media (min-width: 2600px) and (max-width: 3499px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 13px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 12.5px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 16.5px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 20px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 16.5px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 22.5px ; } }
+          @media (min-width: 6000px) {
+            #casino-main .bet-block .bet-list .bet {
+              margin-left: 31.5px ; } }
+          @media (max-width: 799px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 800px) and (max-width: 999px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 1000px) and (max-width: 1151px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 1152px) and (max-width: 1259px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 1260px) and (max-width: 1349px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 1350px) and (max-width: 1429px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 1430px) and (max-width: 1589px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 1900px) and (max-width: 2199px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 2600px) and (max-width: 3499px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          @media (min-width: 6000px) {
+            #casino-main .bet-block .bet-list .bet:first-child {
+              margin-left: 0px ; } }
+          #casino-main .bet-block .bet-list .bet:active {
+            background: rgba(105, 108, 116, 0.4); }
+        @media (max-width: 799px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 20.25px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 22.5px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 29.025px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 30.825px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 33.75px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 31.5px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 38.25px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 36px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 42.75px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 45px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 45px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 56.25px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 60.75px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 58.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 56.25px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 74.25px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 90px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 74.25px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 101.25px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .bet-block .bet-list .bet-45 {
+            width: 141.75px ; } }
+      #casino-main .bet-block .e-input {
+        resize: none;
+        background: #111319;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; }
+        @media (max-width: 799px) {
+          #casino-main .bet-block .e-input {
+            width: 92.25px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .bet-block .e-input {
+            width: 102.5px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .bet-block .e-input {
+            width: 132.225px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .bet-block .e-input {
+            width: 140.425px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .bet-block .e-input {
+            width: 153.75px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .bet-block .e-input {
+            width: 143.5px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .bet-block .e-input {
+            width: 174.25px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .bet-block .e-input {
+            width: 164px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .bet-block .e-input {
+            width: 194.75px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .bet-block .e-input {
+            width: 205px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .bet-block .e-input {
+            width: 205px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .bet-block .e-input {
+            width: 256.25px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .bet-block .e-input {
+            width: 276.75px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .bet-block .e-input {
+            width: 266.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .bet-block .e-input {
+            width: 256.25px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .bet-block .e-input {
+            width: 338.25px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .bet-block .e-input {
+            width: 410px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .bet-block .e-input {
+            width: 338.25px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .bet-block .e-input {
+            width: 461.25px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .bet-block .e-input {
+            width: 645.75px ; } }
+        @media (max-width: 799px) {
+          #casino-main .bet-block .e-input {
+            height: 22.5px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .bet-block .e-input {
+            height: 25px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .bet-block .e-input {
+            height: 32.25px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .bet-block .e-input {
+            height: 34.25px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .bet-block .e-input {
+            height: 37.5px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .bet-block .e-input {
+            height: 35px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .bet-block .e-input {
+            height: 42.5px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .bet-block .e-input {
+            height: 40px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .bet-block .e-input {
+            height: 47.5px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .bet-block .e-input {
+            height: 50px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .bet-block .e-input {
+            height: 50px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .bet-block .e-input {
+            height: 62.5px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .bet-block .e-input {
+            height: 67.5px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .bet-block .e-input {
+            height: 65px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .bet-block .e-input {
+            height: 62.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .bet-block .e-input {
+            height: 82.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .bet-block .e-input {
+            height: 100px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .bet-block .e-input {
+            height: 82.5px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .bet-block .e-input {
+            height: 112.5px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .bet-block .e-input {
+            height: 157.5px ; } }
+        @media (max-width: 799px) {
+          #casino-main .bet-block .e-input {
+            font-size: 12.6px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .bet-block .e-input {
+            font-size: 14px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .bet-block .e-input {
+            font-size: 18.06px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .bet-block .e-input {
+            font-size: 19.18px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .bet-block .e-input {
+            font-size: 21px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .bet-block .e-input {
+            font-size: 19.6px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .bet-block .e-input {
+            font-size: 23.8px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .bet-block .e-input {
+            font-size: 22.4px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .bet-block .e-input {
+            font-size: 26.6px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .bet-block .e-input {
+            font-size: 28px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .bet-block .e-input {
+            font-size: 28px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .bet-block .e-input {
+            font-size: 35px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .bet-block .e-input {
+            font-size: 37.8px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .bet-block .e-input {
+            font-size: 36.4px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .bet-block .e-input {
+            font-size: 35px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .bet-block .e-input {
+            font-size: 46.2px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .bet-block .e-input {
+            font-size: 56px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .bet-block .e-input {
+            font-size: 46.2px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .bet-block .e-input {
+            font-size: 63px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .bet-block .e-input {
+            font-size: 88.2px ; } }
+        @media (max-width: 799px) {
+          #casino-main .bet-block .e-input {
+            padding: 4.5px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .bet-block .e-input {
+            padding: 5px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .bet-block .e-input {
+            padding: 6.45px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .bet-block .e-input {
+            padding: 6.85px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .bet-block .e-input {
+            padding: 7.5px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .bet-block .e-input {
+            padding: 7px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .bet-block .e-input {
+            padding: 8.5px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .bet-block .e-input {
+            padding: 8px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .bet-block .e-input {
+            padding: 9.5px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .bet-block .e-input {
+            padding: 10px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .bet-block .e-input {
+            padding: 10px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .bet-block .e-input {
+            padding: 12.5px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .bet-block .e-input {
+            padding: 13.5px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .bet-block .e-input {
+            padding: 13px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .bet-block .e-input {
+            padding: 12.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .bet-block .e-input {
+            padding: 16.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .bet-block .e-input {
+            padding: 20px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .bet-block .e-input {
+            padding: 16.5px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .bet-block .e-input {
+            padding: 22.5px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .bet-block .e-input {
+            padding: 31.5px ; } }
+      #casino-main .bet-block .bet-button {
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black; }
+        @media (max-width: 799px) {
+          #casino-main .bet-block .bet-button {
+            width: 111.15px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .bet-block .bet-button {
+            width: 123.5px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .bet-block .bet-button {
+            width: 159.315px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .bet-block .bet-button {
+            width: 169.195px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .bet-block .bet-button {
+            width: 185.25px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .bet-block .bet-button {
+            width: 172.9px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .bet-block .bet-button {
+            width: 209.95px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .bet-block .bet-button {
+            width: 197.6px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .bet-block .bet-button {
+            width: 234.65px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .bet-block .bet-button {
+            width: 247px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .bet-block .bet-button {
+            width: 247px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .bet-block .bet-button {
+            width: 308.75px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .bet-block .bet-button {
+            width: 333.45px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .bet-block .bet-button {
+            width: 321.1px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .bet-block .bet-button {
+            width: 308.75px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-button {
+            width: 407.55px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-button {
+            width: 494px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-button {
+            width: 407.55px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-button {
+            width: 555.75px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .bet-block .bet-button {
+            width: 778.05px ; } }
+        @media (max-width: 799px) {
+          #casino-main .bet-block .bet-button {
+            height: 27.45px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .bet-block .bet-button {
+            height: 30.5px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .bet-block .bet-button {
+            height: 39.345px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .bet-block .bet-button {
+            height: 41.785px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .bet-block .bet-button {
+            height: 45.75px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .bet-block .bet-button {
+            height: 42.7px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .bet-block .bet-button {
+            height: 51.85px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .bet-block .bet-button {
+            height: 48.8px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .bet-block .bet-button {
+            height: 57.95px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .bet-block .bet-button {
+            height: 61px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .bet-block .bet-button {
+            height: 61px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .bet-block .bet-button {
+            height: 76.25px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .bet-block .bet-button {
+            height: 82.35px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .bet-block .bet-button {
+            height: 79.3px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .bet-block .bet-button {
+            height: 76.25px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-button {
+            height: 100.65px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-button {
+            height: 122px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-button {
+            height: 100.65px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-button {
+            height: 137.25px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .bet-block .bet-button {
+            height: 192.15px ; } }
+        @media (max-width: 799px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 2.7px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 3px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 3.87px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 4.11px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 4.5px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 4.2px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 5.1px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 4.8px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 5.7px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 6px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 6px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 7.5px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 8.1px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 7.8px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 7.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 9.9px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 12px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 9.9px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 13.5px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .bet-block .bet-button {
+            border-radius: 18.9px ; } }
+        @media (max-width: 799px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 10.8px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 12px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 15.48px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 16.44px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 18px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 16.8px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 20.4px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 19.2px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 22.8px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 24px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 24px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 30px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 32.4px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 31.2px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 30px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 39.6px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 48px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 39.6px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 54px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .bet-block .bet-button {
+            font-size: 75.6px ; } }
+        @media (max-width: 799px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 10.8px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 12px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 15.48px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 16.44px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 18px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 16.8px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 20.4px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 19.2px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 22.8px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 24px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 24px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 30px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 32.4px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 31.2px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 30px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 39.6px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 48px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 39.6px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 54px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .bet-block .bet-button {
+            margin-top: 75.6px ; } }
+        #casino-main .bet-block .bet-button.black {
+          background: rgba(17, 19, 25, 0.9);
+          color: white; }
+          @media (max-width: 799px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 14.4px ; } }
+          @media (min-width: 800px) and (max-width: 999px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 16px ; } }
+          @media (min-width: 1000px) and (max-width: 1151px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 20.64px ; } }
+          @media (min-width: 1152px) and (max-width: 1259px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 21.92px ; } }
+          @media (min-width: 1260px) and (max-width: 1349px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 24px ; } }
+          @media (min-width: 1350px) and (max-width: 1429px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 22.4px ; } }
+          @media (min-width: 1430px) and (max-width: 1589px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 27.2px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 25.6px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 30.4px ; } }
+          @media (min-width: 1900px) and (max-width: 2199px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 32px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 32px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 40px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 43.2px ; } }
+          @media (min-width: 2600px) and (max-width: 3499px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 41.6px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 40px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 52.8px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 64px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 52.8px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 72px ; } }
+          @media (min-width: 6000px) {
+            #casino-main .bet-block .bet-button.black {
+              margin-bottom: 100.8px ; } }
+    #casino-main .bottom-line {
+      width: 100%;
+      background: white;
+      position: absolute;
+      bottom: 0; }
+      @media (max-width: 799px) {
+        #casino-main .bottom-line {
+          height: 0.9px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .bottom-line {
+          height: 1px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .bottom-line {
+          height: 1.29px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .bottom-line {
+          height: 1.37px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .bottom-line {
+          height: 1.5px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .bottom-line {
+          height: 1.4px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .bottom-line {
+          height: 1.7px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .bottom-line {
+          height: 1.6px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .bottom-line {
+          height: 1.9px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .bottom-line {
+          height: 2px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .bottom-line {
+          height: 2px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .bottom-line {
+          height: 2.5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .bottom-line {
+          height: 2.7px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .bottom-line {
+          height: 2.6px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .bottom-line {
+          height: 2.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .bottom-line {
+          height: 3.3px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .bottom-line {
+          height: 4px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .bottom-line {
+          height: 3.3px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .bottom-line {
+          height: 4.5px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .bottom-line {
+          height: 6.3px ; } }
+    #casino-main .info-area {
+      flex-direction: row;
+      display: flex; }
+      @media (max-width: 799px) {
+        #casino-main .info-area {
+          font-size: 10.8px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .info-area {
+          font-size: 12px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .info-area {
+          font-size: 15.48px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .info-area {
+          font-size: 16.44px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .info-area {
+          font-size: 18px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .info-area {
+          font-size: 16.8px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .info-area {
+          font-size: 20.4px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .info-area {
+          font-size: 19.2px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .info-area {
+          font-size: 22.8px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .info-area {
+          font-size: 24px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .info-area {
+          font-size: 24px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .info-area {
+          font-size: 30px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .info-area {
+          font-size: 32.4px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .info-area {
+          font-size: 31.2px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .info-area {
+          font-size: 30px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .info-area {
+          font-size: 39.6px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .info-area {
+          font-size: 48px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .info-area {
+          font-size: 39.6px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .info-area {
+          font-size: 54px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .info-area {
+          font-size: 75.6px ; } }
+      @media (max-width: 799px) {
+        #casino-main .info-area {
+          height: 13.5px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .info-area {
+          height: 15px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .info-area {
+          height: 19.35px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .info-area {
+          height: 20.55px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .info-area {
+          height: 22.5px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .info-area {
+          height: 21px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .info-area {
+          height: 25.5px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .info-area {
+          height: 24px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .info-area {
+          height: 28.5px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .info-area {
+          height: 30px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .info-area {
+          height: 30px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .info-area {
+          height: 37.5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .info-area {
+          height: 40.5px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .info-area {
+          height: 39px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .info-area {
+          height: 37.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .info-area {
+          height: 49.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .info-area {
+          height: 60px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .info-area {
+          height: 49.5px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .info-area {
+          height: 67.5px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .info-area {
+          height: 94.5px ; } }
+      #casino-main .info-area .gray-color {
+        color: #C1C1C1; }
+        @media (max-width: 799px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 2.25px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 2.5px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 3.225px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 3.425px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 3.75px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 3.5px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 4.25px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 4px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 4.75px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 5px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 5px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 6.25px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 6.75px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 6.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 6.25px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 8.25px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 10px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 8.25px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 11.25px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .info-area .gray-color {
+            margin-right: 15.75px ; } }
+      @media (max-width: 799px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 2.25px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 2.5px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 3.225px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 3.425px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 3.75px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 3.5px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 4.25px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 4px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 4.75px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 6.25px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 6.75px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 6.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 6.25px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 8.25px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 10px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 8.25px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 11.25px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .info-area .margin-5 {
+          margin-right: 15.75px ; } }
+    #casino-main .info-block {
+      background: rgba(1, 22, 39, 0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative; }
+      @media (max-width: 799px) {
+        #casino-main .info-block {
+          width: 180px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .info-block {
+          width: 200px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .info-block {
+          width: 258px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .info-block {
+          width: 274px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .info-block {
+          width: 300px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .info-block {
+          width: 280px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .info-block {
+          width: 340px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .info-block {
+          width: 320px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .info-block {
+          width: 380px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .info-block {
+          width: 400px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .info-block {
+          width: 400px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .info-block {
+          width: 500px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .info-block {
+          width: 540px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .info-block {
+          width: 520px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .info-block {
+          width: 500px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .info-block {
+          width: 660px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .info-block {
+          width: 800px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .info-block {
+          width: 660px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .info-block {
+          width: 900px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .info-block {
+          width: 1260px ; } }
+      @media (max-width: 799px) {
+        #casino-main .info-block {
+          height: 192.6px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .info-block {
+          height: 214px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .info-block {
+          height: 276.06px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .info-block {
+          height: 293.18px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .info-block {
+          height: 321px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .info-block {
+          height: 299.6px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .info-block {
+          height: 363.8px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .info-block {
+          height: 342.4px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .info-block {
+          height: 406.6px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .info-block {
+          height: 428px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .info-block {
+          height: 428px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .info-block {
+          height: 535px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .info-block {
+          height: 577.8px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .info-block {
+          height: 556.4px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .info-block {
+          height: 535px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .info-block {
+          height: 706.2px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .info-block {
+          height: 856px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .info-block {
+          height: 706.2px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .info-block {
+          height: 963px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .info-block {
+          height: 1348.2px ; } }
+      @media (max-width: 799px) {
+        #casino-main .info-block {
+          padding-top: 20.7px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .info-block {
+          padding-top: 23px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .info-block {
+          padding-top: 29.67px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .info-block {
+          padding-top: 31.51px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .info-block {
+          padding-top: 34.5px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .info-block {
+          padding-top: 32.2px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .info-block {
+          padding-top: 39.1px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .info-block {
+          padding-top: 36.8px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .info-block {
+          padding-top: 43.7px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .info-block {
+          padding-top: 46px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .info-block {
+          padding-top: 46px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .info-block {
+          padding-top: 57.5px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .info-block {
+          padding-top: 62.1px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .info-block {
+          padding-top: 59.8px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .info-block {
+          padding-top: 57.5px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .info-block {
+          padding-top: 75.9px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .info-block {
+          padding-top: 92px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .info-block {
+          padding-top: 75.9px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .info-block {
+          padding-top: 103.5px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .info-block {
+          padding-top: 144.9px ; } }
+      @media (max-width: 799px) {
+        #casino-main .info-block {
+          margin-top: 26.55px ; } }
+      @media (min-width: 800px) and (max-width: 999px) {
+        #casino-main .info-block {
+          margin-top: 29.5px ; } }
+      @media (min-width: 1000px) and (max-width: 1151px) {
+        #casino-main .info-block {
+          margin-top: 38.055px ; } }
+      @media (min-width: 1152px) and (max-width: 1259px) {
+        #casino-main .info-block {
+          margin-top: 40.415px ; } }
+      @media (min-width: 1260px) and (max-width: 1349px) {
+        #casino-main .info-block {
+          margin-top: 44.25px ; } }
+      @media (min-width: 1350px) and (max-width: 1429px) {
+        #casino-main .info-block {
+          margin-top: 41.3px ; } }
+      @media (min-width: 1430px) and (max-width: 1589px) {
+        #casino-main .info-block {
+          margin-top: 50.15px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+        #casino-main .info-block {
+          margin-top: 47.2px ; } }
+      @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+        #casino-main .info-block {
+          margin-top: 56.05px ; } }
+      @media (min-width: 1900px) and (max-width: 2199px) {
+        #casino-main .info-block {
+          margin-top: 59px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+        #casino-main .info-block {
+          margin-top: 59px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+        #casino-main .info-block {
+          margin-top: 73.75px ; } }
+      @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+        #casino-main .info-block {
+          margin-top: 79.65px ; } }
+      @media (min-width: 2600px) and (max-width: 3499px) {
+        #casino-main .info-block {
+          margin-top: 76.7px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+        #casino-main .info-block {
+          margin-top: 73.75px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+        #casino-main .info-block {
+          margin-top: 97.35px ; } }
+      @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+        #casino-main .info-block {
+          margin-top: 118px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+        #casino-main .info-block {
+          margin-top: 97.35px ; } }
+      @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+        #casino-main .info-block {
+          margin-top: 132.75px ; } }
+      @media (min-width: 6000px) {
+        #casino-main .info-block {
+          margin-top: 185.85px ; } }
+      #casino-main .info-block .line-top {
+        bottom: 100%; }
+      #casino-main .info-block .bet-money {
+        flex-direction: row;
+        display: flex;
+        align-items: center; }
+        @media (max-width: 799px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 11.7px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 13px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 16.77px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 17.81px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 19.5px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 18.2px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 22.1px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 20.8px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 24.7px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 26px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 26px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 32.5px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 35.1px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 33.8px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 32.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 42.9px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 52px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 42.9px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 58.5px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .info-block .bet-money {
+            margin-bottom: 81.9px ; } }
+        @media (max-width: 799px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 18.9px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 21px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 27.09px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 28.77px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 31.5px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 29.4px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 35.7px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 33.6px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 39.9px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 42px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 42px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 52.5px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 56.7px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 54.6px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 52.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 69.3px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 84px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 69.3px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 94.5px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            font-size: 132.3px ; } }
+        @media (max-width: 799px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 8.1px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 9px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 11.61px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 12.33px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 13.5px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 12.6px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 15.3px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 14.4px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 17.1px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 18px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 18px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 22.5px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 24.3px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 23.4px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 22.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 29.7px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 36px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 29.7px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 40.5px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .info-block .bet-money .icon-dollar {
+            margin-right: 56.7px ; } }
+      #casino-main .info-block .info-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); }
+        @media (max-width: 799px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 22.5px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 25px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 32.25px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 34.25px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 37.5px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 35px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 42.5px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 40px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 47.5px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 50px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 50px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 62.5px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 67.5px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 65px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 62.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 82.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 100px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 82.5px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 112.5px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .info-block .info-buttons {
+            margin-top: 157.5px ; } }
+        @media (max-width: 799px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 6.75px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 7.5px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 9.675px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 10.275px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 11.25px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 10.5px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 12.75px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 12px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 14.25px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 15px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 15px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 18.75px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 20.25px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 19.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 18.75px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 24.75px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 30px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 24.75px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 33.75px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .info-block .info-buttons {
+            grid-gap: 47.25px ; } }
+        @media (max-width: 799px) {
+          #casino-main .info-block .info-buttons {
+            width: 153px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .info-block .info-buttons {
+            width: 170px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .info-block .info-buttons {
+            width: 219.3px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .info-block .info-buttons {
+            width: 232.9px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .info-block .info-buttons {
+            width: 255px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .info-block .info-buttons {
+            width: 238px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .info-block .info-buttons {
+            width: 289px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .info-block .info-buttons {
+            width: 272px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .info-block .info-buttons {
+            width: 323px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .info-block .info-buttons {
+            width: 340px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .info-block .info-buttons {
+            width: 340px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .info-block .info-buttons {
+            width: 425px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .info-block .info-buttons {
+            width: 459px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .info-block .info-buttons {
+            width: 442px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .info-block .info-buttons {
+            width: 425px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .info-block .info-buttons {
+            width: 561px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .info-block .info-buttons {
+            width: 680px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .info-block .info-buttons {
+            width: 561px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .info-block .info-buttons {
+            width: 765px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .info-block .info-buttons {
+            width: 1071px ; } }
+        @media (max-width: 799px) {
+          #casino-main .info-block .info-buttons {
+            height: 60.75px ; } }
+        @media (min-width: 800px) and (max-width: 999px) {
+          #casino-main .info-block .info-buttons {
+            height: 67.5px ; } }
+        @media (min-width: 1000px) and (max-width: 1151px) {
+          #casino-main .info-block .info-buttons {
+            height: 87.075px ; } }
+        @media (min-width: 1152px) and (max-width: 1259px) {
+          #casino-main .info-block .info-buttons {
+            height: 92.475px ; } }
+        @media (min-width: 1260px) and (max-width: 1349px) {
+          #casino-main .info-block .info-buttons {
+            height: 101.25px ; } }
+        @media (min-width: 1350px) and (max-width: 1429px) {
+          #casino-main .info-block .info-buttons {
+            height: 94.5px ; } }
+        @media (min-width: 1430px) and (max-width: 1589px) {
+          #casino-main .info-block .info-buttons {
+            height: 114.75px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+          #casino-main .info-block .info-buttons {
+            height: 108px ; } }
+        @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+          #casino-main .info-block .info-buttons {
+            height: 128.25px ; } }
+        @media (min-width: 1900px) and (max-width: 2199px) {
+          #casino-main .info-block .info-buttons {
+            height: 135px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+          #casino-main .info-block .info-buttons {
+            height: 135px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+          #casino-main .info-block .info-buttons {
+            height: 168.75px ; } }
+        @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+          #casino-main .info-block .info-buttons {
+            height: 182.25px ; } }
+        @media (min-width: 2600px) and (max-width: 3499px) {
+          #casino-main .info-block .info-buttons {
+            height: 175.5px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+          #casino-main .info-block .info-buttons {
+            height: 168.75px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+          #casino-main .info-block .info-buttons {
+            height: 222.75px ; } }
+        @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+          #casino-main .info-block .info-buttons {
+            height: 270px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+          #casino-main .info-block .info-buttons {
+            height: 222.75px ; } }
+        @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+          #casino-main .info-block .info-buttons {
+            height: 303.75px ; } }
+        @media (min-width: 6000px) {
+          #casino-main .info-block .info-buttons {
+            height: 425.25px ; } }
+        #casino-main .info-block .info-buttons .bet-button {
+          width: 100%;
+          height: 100%;
+          background: rgba(17, 19, 25, 0.9);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          @media (max-width: 799px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 2.7px ; } }
+          @media (min-width: 800px) and (max-width: 999px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 3px ; } }
+          @media (min-width: 1000px) and (max-width: 1151px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 3.87px ; } }
+          @media (min-width: 1152px) and (max-width: 1259px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 4.11px ; } }
+          @media (min-width: 1260px) and (max-width: 1349px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 4.5px ; } }
+          @media (min-width: 1350px) and (max-width: 1429px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 4.2px ; } }
+          @media (min-width: 1430px) and (max-width: 1589px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 5.1px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 4.8px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 5.7px ; } }
+          @media (min-width: 1900px) and (max-width: 2199px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 6px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 6px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 7.5px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 8.1px ; } }
+          @media (min-width: 2600px) and (max-width: 3499px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 7.8px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 7.5px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 9.9px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 12px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 9.9px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 13.5px ; } }
+          @media (min-width: 6000px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              border-radius: 18.9px ; } }
+          @media (max-width: 799px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 10.8px ; } }
+          @media (min-width: 800px) and (max-width: 999px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 12px ; } }
+          @media (min-width: 1000px) and (max-width: 1151px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 15.48px ; } }
+          @media (min-width: 1152px) and (max-width: 1259px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 16.44px ; } }
+          @media (min-width: 1260px) and (max-width: 1349px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 18px ; } }
+          @media (min-width: 1350px) and (max-width: 1429px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 16.8px ; } }
+          @media (min-width: 1430px) and (max-width: 1589px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 20.4px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (max-height: 909px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 19.2px ; } }
+          @media (min-width: 1590px) and (max-width: 1899px) and (min-height: 910px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 22.8px ; } }
+          @media (min-width: 1900px) and (max-width: 2199px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 24px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (max-height: 1100px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 24px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1101px) and (max-height: 1399px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 30px ; } }
+          @media (min-width: 2200px) and (max-width: 2599px) and (min-height: 1400px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 32.4px ; } }
+          @media (min-width: 2600px) and (max-width: 3499px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 31.2px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1209px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 30px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (max-height: 1609px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 39.6px ; } }
+          @media (min-width: 3500px) and (max-width: 4999px) and (min-height: 1610px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 48px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (max-height: 1609px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 39.6px ; } }
+          @media (min-width: 5000px) and (max-width: 5999px) and (min-height: 1610px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 54px ; } }
+          @media (min-width: 6000px) {
+            #casino-main .info-block .info-buttons .bet-button {
+              font-size: 75.6px ; } }
+  

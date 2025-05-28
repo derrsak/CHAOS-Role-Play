@@ -1,0 +1,350 @@
+#characterInfo .info-box {
+    position: absolute;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 530px;
+    top: 37.96%;
+    background: #1D1F25;
+    border-radius: 10px;
+    font-family: 'Gilroy';
+    user-select: none;
+}
+
+#characterInfo .vectorcontent {
+    margin-left: 165px;
+    margin-top: 150px;
+}
+
+#characterInfo .vectorlevel {
+    margin-left: 25px;
+}
+
+#characterInfo .name {
+    width: 236px;
+    height: 25px;
+    margin-top: 19px;
+    margin-left: 185px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+#characterInfo .info {
+    position: absolute;
+    left: 182px;
+    top: 58px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+#characterInfo .info td {
+    color: rgba(255, 255, 255, 0.3);
+    position: relative; 
+    padding-right: 150px; 
+}
+
+#characterInfo .info span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+#characterInfo .info img {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+
+#characterInfo .content .warns {
+    color: #b50000;
+    font-weight: bold;
+    margin: 1vh 0;
+    text-align: center;
+}
+
+#characterInfo .content .warns img {
+    margin-bottom: -0.3vh;
+    margin-right: 0.5vh;
+    width: 2vh;
+}
+
+
+#characterInfo .coins {
+    position: absolute;
+    right: 2.7vh;
+    top: 2.7vh;
+    display: flex;
+}
+
+#characterInfo .add-coins {
+    user-select: none;
+    box-sizing: border-box;
+    padding: 6px 20px;
+    gap: 10px;
+    width: 190px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 0.75px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(25, 26, 30, 0.9);
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 0.5vh 1.1vh;
+}
+
+#characterInfo .add-coins:hover {
+    box-shadow: 0px 0px 0.3vh #FFDF29;
+}
+
+
+
+#characterSelector {
+    position: absolute;
+    width: 450px; /* Ширина для больших экранов */
+    height: 115px;
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    top: 90%; /* Устанавливаем верхнюю позицию */
+    user-select: none;
+}
+
+#characterSelector>div {
+    align-items: center;
+    display: flex;
+}
+
+#characterSelector button {
+    width: 343px;
+    height: 65px;
+    margin-left: 15px;
+    background: rgba(25, 26, 30, 0.9);
+    outline: none;
+    border-radius: 15px;
+    font-family: 'Gilroy';
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+#characterSelector button:not(.disabled):active {
+    color: #fff;
+    background: #BE1018;
+    transition: transform 0.1s ease;
+    transform: scale(1.01);
+
+}
+
+#characterSelector .arrow {
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 800;
+font-size: 85px;
+line-height: 104px;
+color: #1D1F25;
+padding: 15px;
+}
+
+#characterSelector .arrow:not(.disabled):active {
+    transition: transform 0.1s ease;
+    transform: scale(1.05);
+    color: #BE1018;
+}
+
+#characterSelector .disabled {
+color: #7e7d7d;
+}
+
+#createCharacter {
+    user-select: none;
+    position: absolute;
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    top: 40%; /* Устанавливаем верхнюю позицию */
+    width: 29%; /* Ширина 80% от родителя */
+    max-width: 530px; /* Максимальная ширина */
+    background: #1D1F25;
+    border-radius: 10px;
+}
+
+
+#createCharacter .createbutton {
+    box-sizing: border-box;
+    padding: 15px 20px;
+    gap: 10px;
+    width: 118px;
+    height: 44px;
+    margin-top: 28px;
+    margin-left: 206px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 0.75px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+#createCharacter .createbutton:active {
+    background: rgba(190, 16, 24, 0.15);
+    border: 0.75px solid rgba(190, 16, 24, 0.3);
+    color: #BE1018;
+    transition: transform 0.1s ease;
+    transform: scale(1.05);
+}
+
+
+
+#createCharacter .page-title {
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+color: #FFFFFF;
+margin-top: 31px;
+margin-left: 164px;
+}
+
+#createCharacter .sub-title {
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 26px;
+display: flex;
+align-items: center;
+color: rgba(255, 255, 255, 0.3);
+margin-left: 60px;
+}
+
+#createCharacter .Rectangle {
+    margin-left: 165px;
+    margin-top: 8px;
+}
+
+#characterAddSlot {
+    background: #1D1F25;
+    border-radius: 10px;
+    border-radius: 1vh;
+    position: absolute;
+    font-family: Gilroy;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    padding: 2.4vh 5.4vh;
+    opacity: 0;
+    user-select: none;
+}
+
+#characterAddSlot .add-slot.step {
+    position: relative;
+    left: -2.7vh;
+}
+
+#characterAddSlot .add-slot>div {
+    display: flex;
+    color: white;
+}
+
+#characterAddSlot .add-slot span {
+    color: #BE1018;
+    font-weight: 700;
+    margin: 0 0.6vh 0 1.3vh;
+}
+
+#characterAddSlot .add-slot img {
+    height: 1.7vh;
+    width: 1.7vh;
+}
+
+#characterAddSlot .add-slot .btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 0.75px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 3.9vh;
+    width: 14.6vh;
+    margin: 0 2.2vh;
+    margin-top: 1.8vh;
+    line-height: 3.9vh;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+#characterAddSlot .add-slot .btn:active {
+    background: rgba(190, 16, 24, 0.15);
+    border: 0.75px solid rgba(190, 16, 24, 0.3);
+    border-radius: 10px;
+    transition: transform 0.1s ease;
+    transform: scale(1.05);
+    color: #BE1018;
+}
+
+#characterAddSlot .other {
+    color: white;
+    display: flex;
+    font-weight: 400;
+    width: 27vh;
+}
+
+#characterAddSlot .other .or {
+    font-size: 1.2vh;
+    text-align: center;
+    width: 8vh;
+    height: 100%;
+}
+
+#characterAddSlot .other .or>div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.7vh;
+}
+
+#characterAddSlot .other .info {
+    margin-left: 4.2vh;
+    text-align: center;
+}
+
+#characterAddSlot .other .info span {
+    font-weight: 700;
+    color: #BE1018;
+}
+
+#characterAddSlot .other .info>div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+

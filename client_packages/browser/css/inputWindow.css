@@ -1,0 +1,131 @@
+
+#input-window {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 49vh;
+    min-height: 29.7vh;
+    background: #212121;
+    border: 1px solid #333333;
+    box-shadow: 0px 16px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Gilroy';
+    user-select: none;
+}
+
+    #input-window .header {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-top: 2.8vh;
+        margin-left: 1.5vw;
+    }
+
+    #input-window .body {
+        padding: 2vh;
+        text-align: center;
+    }
+
+        #input-window .body .description {
+            font-weight: 400;
+            font-size: 1.66vh;
+        }
+
+            #input-window .body .description span {
+                font-weight: 500;
+            }
+
+                #input-window .body .description span.money {
+                    color: #6EE425;
+                }
+
+        #input-window .body .hint {
+            text-align: left;
+            margin: 2.7vh 0 0 4.8vh;
+            font-size: 1.33vh;
+        }
+
+        #input-window .body input {
+            font-style: normal;
+            font-weight: 500;
+            width: 32vh;
+            height: 4.5vh;
+            margin: 0.9vh 0 2vh 50%;
+            transform: translate(-50%);
+            border-radius: 1vh;
+            border: none;
+            outline: none;
+            font-size: 1.54vh;
+            padding: 0 1.5vh;
+            color: #FFFFFF;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+            #input-window .body input ::placeholder {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                opacity: 0.3;
+            }
+
+    #input-window .footer {
+        display: flex;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: min-content;
+        margin-bottom: 2.8vh;
+    }
+
+        #input-window .footer > div {
+            height: 3.9vh;
+            width: 14.8vh;
+            margin: 0 2.3vh;
+            border-radius: 1.3vh;
+            line-height: 3.9vh;
+            text-align: center;
+            font-size: 1.46vh;
+        }
+
+    #input-window .left {
+        width: 410px;
+        height: 50px;
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #E1494B 0%, #AB2C2E 100%);
+        border: 1px solid #E1494C;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+
+        #input-window .left:active {
+            background: radial-gradient(50% 50% at 50% 50%, #E1494B 0%, #FB4949 100%);
+        }
+
+    #input-window .right {
+        position: absolute;
+        right: 50px;
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        opacity: 0.1;
+        background-color: rgba(255, 255, 255, 0.1); /* Прозрачный фон элемента */
+        border: 0.7px solid #FFFFFF; /* Красная граница с полной непрозрачностью */
+        border-radius: 3px;
+        border-radius: 3px;
+    }
+
+        #input-window .right:active {
+            opacity: 0.3;
+        }

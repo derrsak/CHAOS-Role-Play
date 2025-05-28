@@ -1,0 +1,48 @@
+{
+  "name": "classic-rp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://BlabbingCrow@bitbucket.org/classicroleplay/classic-gamemode.git"
+  },
+  "author": "classic-rp team",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/classicroleplay/classic-gamemode#readme",
+  "devDependencies": {
+    "@types/ragemp-c": "github:CocaColaBear/types-ragemp-c#master",
+    "@types/ragemp-s": "github:CocaColaBear/types-ragemp-s#master",
+    "babel-core": "^4.7.16",
+    "babel-loader": "^9.2.1",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^0.0.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-3": "^6.16.0",
+    "install": "^0.13.0",
+    "javascript-obfuscator": "^4.1.1",
+    "npm": "^11.0.0",
+    "or": "^0.2.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "exec": "^0.2.1",
+    "jquery-param": "^1.0.2",
+    "md5": "^2.2.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.12.0",
+    "nodemailer": "^6.2.1",
+    "request": "^2.88.0",
+    "rimraf": "^3.0.0",
+    "sequelize": "^6.37.5",
+    "trello-node-api": "0.0.7",
+    "wrench": "^1.5.9"
+  }
+}

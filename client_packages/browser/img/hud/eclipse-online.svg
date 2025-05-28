@@ -1,0 +1,14 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="filter0_d" x="0" y="0" width="25" height="25">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+            <feFlood flood-color="rgba(0, 0, 0, 0.33)" result="color"/>
+            <feComposite in2="blur" operator="in"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <circle cx="12.5" cy="12.5" r="2.4" fill="#55E27F" filter="url(#filter0_d)"/>
+</svg>

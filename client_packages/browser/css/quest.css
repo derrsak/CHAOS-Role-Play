@@ -1,0 +1,436 @@
+  @font-face {
+    font-family: "El Messiri";
+    src: url(../fonts/El-Messiri/El-Messiri-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "El Messiri";
+    src: url(../fonts/El-Messiri/El-Messiri-Medium.otf);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "El Messiri";
+    src: url(../fonts/El-Messiri/El-Messiri-Semibold.otf);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "El Messiri";
+    src: url(../fonts/El-Messiri/El-Messiri-Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  #quest *,
+  #quest *::before,
+  #quest *::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+  }
+  
+  
+  #quest .quest-body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  #quest button {
+    outline: none;
+    background-color: transparent;
+  }
+  
+  #quest .quest {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 100%;
+    /*background-color: black;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #quest .quest-wrapper {
+    background: #0d1412;
+    box-shadow: inset 0 0.37vmin 2.778vmin rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    min-width: 38.704vmin;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  #quest .quest-title {
+    width: 100%;
+    padding: 0 0.463vmin;
+    border: 0.093vmin solid;
+    -o-border-image: linear-gradient(#5e584f, #cca770, #675a5a) 1 1;
+       border-image: linear-gradient(#5e584f, #cca770, #675a5a) 1 1;
+    background: center/cover url(../img/quest/header-background.png) no-repeat;
+    box-shadow: inset 0 0.37vmin 2.778vmin rgba(0, 0, 0, 0.5);
+  }
+  
+  #quest .quest-title__wrapper {
+    width: 100%;
+    padding: 1.389vmin;
+    border-style: solid;
+    border-width: 0 0.093vmin;
+    -o-border-image: linear-gradient(#5e584f, #cca770, #675a5a) 1 1;
+       border-image: linear-gradient(#5e584f, #cca770, #675a5a) 1 1;
+    background: linear-gradient(232.88deg, rgba(0, 31, 23, 0.39), rgba(0, 5, 4, 0.58));
+  }
+  #quest .quest-title__wrapper > p {
+    font-weight: 700;
+    text-shadow: 0.185vmin 0.185vmin 0 black;
+    font-family: "El Messiri", sans-serif;
+  }
+  #quest .quest-title__wrapper > p:first-child {
+    font-size: 1.481vmin;
+    line-height: 2.315vmin;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 0.278vmin;
+  }
+  #quest .quest-title__wrapper > p:last-child {
+    font-size: 2.222vmin;
+    line-height: 2.593vmin;
+    color: #d0d0d0;
+    text-transform: uppercase;
+  }
+  
+  #quest .quest-main {
+    margin: 1.111vmin auto 1.667vmin;
+    padding: 0 0.648vmin 0 0.463vmin;
+  }
+  
+  #quest .quest-main__wrapper {
+    padding: 0.926vmin 1.667vmin 2.963vmin 1.852vmin;
+    background: left 0 top 0/100% 100% url(../img/quest/quest-main__background.png) no-repeat;
+    filter: drop-shadow(0 0.37vmin 0.37vmin rgba(0, 0, 0, 0.25));
+  }
+  
+  #quest .quest-content {
+    margin: 2.315vmin 0;
+    display: flex;
+    align-items: stretch;
+    max-height: 50.648vmin;
+  }
+  #quest .quest-content:first-child {
+    margin-top: 0;
+  }
+  #quest .quest-content:last-child {
+    margin-bottom: 0;
+  }
+  #quest .quest-content > * {
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+  
+  #quest .quest-content__wrapper {
+    width: 33.889vmin;
+    overflow: hidden;
+  }
+  
+  #quest .quest-content__text {
+    width: 100%;
+  }
+  #quest .quest-content__text > p {
+    font-family: "El Messiri";
+    margin: 1.852vmin 0;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.481vmin;
+    line-height: 2.315vmin;
+    color: white;
+  }
+  #quest .quest-content__text > p:first-child {
+    margin-top: 0;
+  }
+  #quest .quest-content__text > p:last-child {
+    margin-bottom: 0;
+  }
+  
+  #quest .quest-content__wrapper-title {
+    margin: 0.926vmin 0;
+  }
+  #quest .quest-content__wrapper-title:first-child {
+    margin-top: 0;
+  }
+  #quest .quest-content__wrapper-title:last-child {
+    margin-bottom: 0;
+  }
+  #quest .quest-content__wrapper-title > p {
+    text-shadow: 0.185vmin 0.185vmin 0 rgba(0, 0, 0, 0.25);
+    font-family: "El Messiri";
+    font-weight: 700;
+  }
+  #quest .quest-content__wrapper-title > p:first-child {
+    font-size: 1.481vmin;
+    line-height: 2.315vmin;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  #quest .quest-content__wrapper-title > p:last-child {
+    font-size: 2.963vmin;
+    line-height: 4.63vmin;
+    color: #5fa776;
+    text-transform: uppercase;
+  }
+  
+  #quest .quest-tasks {
+    margin: 2.037vmin 0;
+  }
+  #quest .quest-tasks:first-child {
+    margin-top: 0;
+  }
+  #quest .quest-tasks:last-child {
+    margin-bottom: 0;
+  }
+  
+  #quest .quest-tasks__item {
+    margin: 1.852vmin 0;
+    display: flex;
+  }
+  #quest .quest-tasks__item:first-child {
+    margin-top: 0;
+  }
+  #quest .quest-tasks__item:last-child {
+    margin-bottom: 0;
+  }
+  #quest .quest-tasks__item > p {
+    max-width: 30.185vmin;
+    font-family: "El Messiri";
+    font-weight: 700;
+    font-size: 1.481vmin;
+    line-height: 2.315vmin;
+    margin-left: 0.926vmin;
+    color: #2f323a;
+    margin-top: 0.463vmin;
+  }
+  #quest .quest-tasks__item > * {
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+  #quest .quest-tasks__item.active > p {
+    color: #5fa776;
+  }
+  #quest .quest-tasks__item.active .quest-tasks__item-checkbox::before {
+    opacity: 0;
+  }
+  #quest .quest-tasks__item.active .quest-tasks__item-checkbox::after {
+    opacity: 1;
+  }
+  
+  #quest .quest-tasks__item-checkbox {
+    position: relative;
+    width: 2.778vmin;
+    height: 2.778vmin;
+    background: center/cover url(../img/quest/header-background.png) no-repeat;
+    box-shadow: inset 0 0.37vmin 2.778vmin rgba(0, 0, 0, 0.5);
+  }
+  #quest .quest-tasks__item-checkbox::before,
+  #quest .quest-tasks__item-checkbox::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  #quest .quest-tasks__item-checkbox::before {
+    border-style: solid;
+    border-width: 0.185vmin;
+    -o-border-image: linear-gradient(#5e584f, #cca770, #675a5a) 1 1;
+       border-image: linear-gradient(#5e584f, #cca770, #675a5a) 1 1;
+  }
+  #quest .quest-tasks__item-checkbox::after {
+    opacity: 0;
+    background: center/contain url(../img/quest/quest-tasks__checkbox.svg) no-repeat;
+  }
+  
+  #quest .quest-scrollbar {
+    position: relative;
+    width: 1.389vmin;
+    margin-left: 1.852vmin;
+    padding: 0.926vmin 0.278vmin;
+    display: flex;
+  }
+  #quest .quest-scrollbar::before {
+    position: relative;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: 0.093vmin;
+    -o-border-image: linear-gradient(#5e584f, #cca770, #675a5a) 1 1;
+       border-image: linear-gradient(#5e584f, #cca770, #675a5a) 1 1;
+  }
+  
+  #quest .quest-scrollbar__thumb {
+    position: absolute;
+    width: 100%;
+    height: 11.852vmin;
+    left: 0;
+    top: 0;
+    background: center/cover url(../img/quest/quest-main__scrollbar.svg) no-repeat;
+    transform: translateY(-50%);
+  }
+  
+  #quest .quest-rewards {
+    width: 100%;
+    margin: 2.315vmin 0;
+  }
+  #quest .quest-rewards:first-child {
+    margin-top: 0;
+  }
+  #quest .quest-rewards:last-child {
+    margin-bottom: 0;
+  }
+  #quest .quest-rewards > p {
+    font-family: "El Messiri";
+    font-weight: 700;
+    font-size: 2.963vmin;
+    line-height: 4.63vmin;
+    text-transform: uppercase;
+    background: linear-gradient(#7a7369, #eac48b, #7a6969);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0.185vmin 0.185vmin 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.926vmin;
+  }
+  
+  #quest .quest-rewards__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 6.111vmin);
+    grid-gap: 2.315vmin;
+    grid-auto-rows: 6.111vmin;
+  }
+  
+  #quest .quest-rewards__list-item {
+    width: 100%;
+    height: 100%;
+    background: left 0 top 0/100% 100% url(../img/quest/quest-reward__background.svg) no-repeat, #0d1412;
+  }
+  #quest .quest-rewards__list-item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #quest .quest-rewards__list-item > p {
+    /*color: #559469;*/
+    color: #e2cba6;
+    text-align: center;
+  }
+  
+  #quest .quest-buttons {
+    padding-bottom: 1.932vmin;
+    background: left 0 bottom 0/100% 100% url(../img/quest/quest-buttons__border.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #quest .quest-buttons > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+  #quest .quest-buttons__item {
+    display: flex;
+    align-items: center;
+    margin: 0 1.296vmin;
+  }
+  #quest .quest-buttons__item:first-child {
+    margin-left: 0;
+  }
+  #quest .quest-buttons__item:last-child {
+    margin-right: 0;
+  }
+  #quest .quest-buttons__item > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  #quest .quest-buttons__item > p {
+    font-family: "El Messiri";
+    font-weight: 500;
+    font-size: 1.481vmin;
+    line-height: 2.315vmin;
+    margin: 0.5vmin 0 0 0.741vmin;
+  }
+  
+  #quest .quest-buttons__item.gray > p {
+    color: #797a7a;
+  }
+  #quest .quest-buttons__item.gray .quest-buttons__item-main {
+    border-color: #a4a5a5;
+  }
+  #quest .quest-buttons__item.gray .quest-buttons__item-background {
+    background-color: #151c17;
+  }
+  #quest .quest-buttons__item.gray .quest-buttons__item-background > p {
+    color: #797a7a;
+  }
+  #quest .quest-buttons__item.green > p {
+    color: #559469;
+  }
+  #quest .quest-buttons__item.green .quest-buttons__item-main {
+    border-color: #5fa776;
+  }
+  #quest .quest-buttons__item.green .quest-buttons__item-background {
+    background-color: #151c17;
+  }
+  #quest .quest-buttons__item.green .quest-buttons__item-background > p {
+    color: #559469;
+  }
+  #quest .quest-buttons__item.yellow > p {
+    color: #e2cba6;
+  }
+  #quest .quest-buttons__item.yellow .quest-buttons__item-main {
+    border-color: #ffd37e;
+  }
+  #quest .quest-buttons__item.yellow .quest-buttons__item-background {
+    background-color: #1f1d19;
+  }
+  #quest .quest-buttons__item.yellow .quest-buttons__item-background > p {
+    color: #ffd37e;
+  }
+  
+  #quest .quest-buttons__item-main {
+    height: 2.037vmin;
+    border: 0.093vmin solid;
+    padding: 0.185vmin;
+    border-radius: 0.278vmin;
+  }
+  
+  #quest .quest-buttons__item-background {
+    height: 100%;
+    border-radius: 0.093vmin;
+    padding: 0 0.463vmin;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #quest .quest-buttons__item-background > p {
+    font-weight: 700;
+    font-size: 1.481vmin;
+    line-height: 2.315vmin;
+    margin: -0.5vh 0vh;
+  }
+  
+  #quest .quest-enter,
+  #quest .quest-leave-to {
+    opacity: 0;
+  }
+  
+  #quest .quest-enter-active,
+  #quest .quest-leave-active {
+    transition: 0.5s opacity ease;
+  }

@@ -1,0 +1,23 @@
+{
+	"maxplayers": 100,
+	"name": "CHAOS Role Play",
+	"gamemode": "roleplay",
+	"stream-distance": 500.0,
+	"announce": false,
+	"csharp": "disabled",
+	"port": 22005,
+	
+	"voice-chat": true,
+	"voice-chat-sample-rate": 48000,
+	"language": "ru",
+	
+	"dbHost": "127.0.0.1",
+	"dbName": "chaos_db",
+	"dbUser": "root",
+	"dbPassword": "",
+	
+	"smtpHost": "smtp.gmail.com",
+	"smtpPort": 587,
+	"emailLogin": "test@gmail.com",
+	"emailPass": "app_password"
+}

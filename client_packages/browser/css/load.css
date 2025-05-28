@@ -1,0 +1,72 @@
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+#load {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    overflow: hidden;
+    background: #151515;
+    font-family: 'Inter', sans-serif;
+}
+
+#load .logo {
+    position: absolute;
+    padding: 33.401849948612536vh;
+    top: 30.2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vh;
+}
+
+#load .disclaimer {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2.672147995889003vh;
+    font-weight: 800;
+    letter-spacing: 0.29393627954779034vh;
+}
+
+#load .description {
+    position: absolute;
+    top: 55.02%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 58.17060637204522vh;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5416238437821173vh;
+    color: #7C7C75;
+}
+
+#load .loader {
+    position: absolute;
+    top: 63.6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56.83453237410072vh;
+    height: 0.7194244604316546vh;
+    border-radius: 0.513874614594039vh;
+    background: #2C2C2C;
+}
+
+#load .loader .launch {
+    height: 100%;
+    border-radius: 0.3167898627243928vh;
+    background: #fff;
+    animation: loading 20s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

@@ -1,0 +1,110 @@
+#captureScore {
+    top: 6%;
+    color: #fff;
+    font-family: Gilroy, sans-serif;
+    font-size: 1.5vh;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 44.4vh;
+    user-select: none;
+}
+
+#captureScore .info {
+    position: absolute;
+    width: 100%;
+    height: 3.52%;
+    top: 6.02%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 0.05em;
+    text-align: center;
+    gap: 38px; /* Расстояние между элементами */
+}
+
+#captureScore .info .info-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    flex-basis: calc(50% - 19px); /* Учитываем половину gap */
+    text-align: center;
+    white-space: nowrap; 
+}
+
+#captureScore .info .time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Центрирование текста */
+}
+
+#captureScore .info .time-container .time-value {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+#captureScore .info .time-container .time-label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.92px;
+    letter-spacing: 0.05em;
+}
+
+#captureScore .info .info-name .action-label {
+    margin-top: 0.2vh;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #DFDFDF;
+}
+
+
+#captureScore .icon {
+    pointer-events: none;
+    position: absolute;
+    height: auto;
+    top: -30px; /* Располагаем иконки над контейнером */
+}
+
+#captureScore .icon.left-icon {
+    left: -20px; /* Сдвиг влево */
+}
+
+#captureScore .icon.right-icon {
+    right: -20px; /* Сдвиг вправо */
+}
+
+#captureScore .icon-number {
+    position: absolute;
+    top: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.76px;
+    letter-spacing: 0.05em;
+}
+
+#captureScore .icon-number.left-number {
+    left: -20px; /* Точно под левой иконкой */
+    transform: translateY(20px); /* Сдвиг вниз относительно иконки */
+}
+
+#captureScore .icon-number.right-number {
+    right: -17px; /* Точно под правой иконкой */
+    transform: translateY(22px); /* Сдвиг вниз относительно иконки */
+}
+
+
+
+#captureScore .progress {
+    height: 1vh;
+    margin-bottom: 0.5vh;
+    margin-top: 1vh;
+    width: 100%;
+}
+
+#captureScore .progress .fill {
+    height: 100%;
+    transition: width 1s;
+}

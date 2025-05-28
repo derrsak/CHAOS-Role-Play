@@ -1,0 +1,99 @@
+#notifications {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    overflow: hidden;
+    bottom: 2%; /* Высота от нижней части экрана */
+}
+
+    #notifications .notif-box {
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        margin-bottom: 0.8vh;
+        border-radius: 1.5vh;
+        max-width: 25vw;
+        min-width: 25vw;
+        min-height: 6vh;
+        position: absolute;
+        padding-right: 21px;
+        background: rgba(24, 24, 23, 0.75);
+        border-radius: 8px;
+    }
+
+    #notifications .notif-shape {
+        position: absolute;
+        right: 21px;
+        top: 20px;
+        width: 21px;
+        height: 21px;
+    }
+
+    #notifications .shape {
+        stroke-width: 9;
+        fill: none;
+    }
+
+    #notifications .notif-box:nth-last-child(-n + 8) { /*maxCount+1*/
+        position: relative !important;
+    }
+
+    #notifications > div img {
+        margin: 0 2vh 0 23px;
+    }
+
+    #notifications > div .message {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        flex: 1;
+    }
+
+    #notifications .cash.remove,
+    #notifications .money.remove,
+    #notifications .error {
+        stroke: #F21626
+    }
+
+    #notifications .info {
+        stroke: #5887DE;
+    }
+
+    #notifications .cash.add,
+    #notifications .money.add,
+    #notifications .success {
+        stroke: #58DE80
+    }
+
+    #notifications .warning {
+        stroke: #FFD54F;
+    }
+
+.notif-enter {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.notif-enter-active {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.notif-leave {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.notif-leave-active {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(-100%);
+    opacity: 0;
+}

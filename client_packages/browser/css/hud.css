@@ -1,0 +1,304 @@
+#hud {
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    pointer-events: none;
+}
+
+    #hud > div {
+        position: absolute;
+    }
+
+    #hud .keys {
+        left: 1vh;
+        top: 50.6%;
+        transform: translateY(-50%);
+    }
+
+        #hud .keys > div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1vh;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        #hud .keys span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(24, 24, 23, 0.75);
+            border-radius: 0.5vh;
+            margin-right: 1vh;
+            height: 3.2vh;
+            width: 1.8vw;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+    /* Верхняя правая панель */
+    #hud .panel-right-top {
+        right: 2vh;
+        top: 2vh;
+    }
+
+    /* Логотип и информация */
+    #hud .info-logo {
+        display: flex;
+    }
+
+.online-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#hud .info-logo .info {
+    font-size: 1.5vh;
+    font-weight: 400;
+    text-align: right;
+    margin: auto;
+}
+
+    #hud .info-logo .info div {
+        margin: 0.5vh 0;
+    }
+
+#hud .logo {
+    width: 6vw;
+    margin-left: 2vh;
+    margin-top: 0.7vh;
+}
+
+/* Уровень розыска */
+#hud .wanted {
+    display: flex;
+    margin-left: auto;
+    width: fit-content;
+    margin-top: 1vh;
+}
+
+    #hud .wanted svg {
+        height: 3vh;
+        width: 3vh;
+        fill: white;
+        opacity: 0.4;
+    }
+
+        #hud .wanted svg.paint {
+            opacity: 1;
+            fill: #fff;
+        }
+
+/* Состояние игрока */
+#hud .player-state {
+    margin-top: 1vh;
+    margin-left: auto;
+    width: fit-content;
+}
+
+    #hud .player-state img {
+        width: 4vh;
+    }
+
+/* Арест */
+#hud .arrest {
+    position: relative;
+    margin-top: 1vh;
+}
+
+    #hud .arrest .wrap {
+        height: 5vh;
+        width: 5vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-left: auto;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    #hud .arrest svg {
+        transform: rotate(-90deg);
+        position: relative;
+        top: -1%;
+        left: -1%;
+        height: calc(100% + 2%);
+        width: calc(100% + 2%);
+        border-radius: 50%;
+    }
+
+    #hud .arrest circle {
+        fill: none;
+        stroke: #1A5AFF;
+        stroke-width: 50%;
+        stroke-dasharray: 78.5% 157%;
+        cy: 50%;
+        cx: 50%;
+        r: 25%;
+    }
+
+    #hud .arrest img {
+        height: 50%;
+        position: absolute;
+        top: 25%;
+        right: 6%;
+    }
+
+    #hud .arrest .description {
+        position: absolute;
+        right: 7vh;
+        top: 1.5vh;
+        font-size: 1.6vh;
+        font-weight: 700;
+        width: max-content;
+    }
+
+#hud .hud-bottom-left {
+    position: absolute;
+    bottom: 5.5vh;
+    left: 17.7vw;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
+.voice-block {
+    position: absolute;
+    left: 9.5vw;
+}
+
+#hud .time-info {
+    display: flex;
+    align-items: center;
+}
+
+#hud .time {
+    margin-right: 7px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#hud .data {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+#hud .weather-info {
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+}
+
+#hud .temperature {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    opacity: 0.7;
+    margin-right: 22px;
+}
+
+#hud .day {
+    margin-right: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    opacity: 0.7;
+}
+
+#hud .location {
+    margin-top: 2.3vh;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+#hud .street {
+    margin-top: 0.3vh;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#hud .money-info {
+    margin-top: 2.8vh;
+}
+
+#hud .cash {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#hud .bank-info {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.57);
+}
+
+
+@media (min-width: 1024px) {
+    #hud .hud-bottom-left {
+        width: 8vw; /* Уменьшаем ширину для больших экранов */
+        height: 15vh; /* Уменьшаем высоту для больших экранов */
+    }
+
+    #hud .time {
+        font-size: 22px; /* Увеличиваем размер шрифта для времени */
+    }
+
+    #hud .data,
+    #hud .temperature,
+    #hud .day,
+    #hud .location,
+    #hud .street,
+    #hud .bank-info {
+        font-size: 16px;
+    }
+
+    #hud .cash {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #hud .hud-bottom-left {
+        width: 7vw;
+        height: 14vh;
+    }
+
+    #hud .time {
+        font-size: 24px;
+    }
+
+    #hud .data,
+    #hud .temperature,
+    #hud .day,
+    #hud .location,
+    #hud .street,
+    #hud .bank-info {
+        font-size: 18px;
+    }
+
+    #hud .cash {
+        font-size: 24px;
+    }
+}

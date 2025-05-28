@@ -1,0 +1,314 @@
+.animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: radial-gradient(50% 88.89% at 50% 50%, rgba(22, 21, 35, 0) 0%, rgba(22, 21, 35, 0.25) 100%);
+    background-color: rgba(22,21,35,.10);
+    letter-spacing: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    .animation .animation_left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* background: linear-gradient(90deg, rgba(22,21,35), #ffffff00); */
+        width: 44vw;
+        height: 100%;
+    }
+
+.animation_left_cats {
+    position: absolute;
+    height: 100%;
+    width: 12vw;
+    transition: opacity .3s;
+    /* background: #ffffff10; */
+    top: 10%;
+    left: 1vw;
+}
+
+    .animation_left_cats header {
+        position: absolute;
+        left: 0;
+        text-shadow: 0 0 .3vw #00000090;
+        top: -2vw;
+        font-size: 1.1vw;
+    }
+
+.animation_left_cats_input {
+    position: relative;
+    width: 10.9vw;
+    height: 2.5vw;
+    padding-left: 1vw;
+    font-family: Montserrat;
+    color: #fff;
+    font-size: .7vw;
+    background: rgba(22,21,35);
+    border: none;
+    outline: none;
+    /* border: .15vw solid #ffffff40; */
+    border-radius: .5vw;
+}
+
+.animation_left_cats_cat.walk:hover,
+.animation_left_cats_cat.walk {
+    background: #dd6d00;
+}
+
+.animation_left_cats_cat.active.walk:hover,
+.animation_left_cats_cat.active,
+.animation_left_cats_cat:hover {
+    background: #438cef;
+}
+
+.opacityAnimation {
+    opacity: .5;
+}
+
+.animation_fastslots_slot a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: .6vw;
+    width: 3.6vw;
+    text-align: center;
+}
+
+.animation_fastslots {
+    position: absolute;
+    bottom: 3vw;
+    right: 1vw;
+    display: flex;
+    width: 25vw;
+    height: 4vw;
+}
+
+.animation_fastslots_numslot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2vw;
+    opacity: .2;
+}
+
+.animation_fastslots_block.used {
+    background: rgba(22,21,35);
+}
+
+.animation_fastslots_block.none svg {
+    opacity: .4;
+}
+
+.animation_fastslots_block.none {
+    background: rgba(22,21,35,.70);
+}
+
+.animation_fastslots_help {
+    position: absolute;
+    text-align: right;
+    right: 0;
+    bottom: -1.5vw;
+    font-size: .7vw;
+    text-shadow: 0 0 .3vw #00000040;
+    color: #ffffff70;
+}
+
+.animation_fastslots_remove svg {
+    width: .5vw;
+    height: .5vw;
+}
+
+.animation_fastslots_remove {
+    position: absolute;
+    top: .5vw;
+    right: 1vw;
+}
+
+.animation_fastslots_help b {
+    color: #fff;
+}
+
+.animation_fastslots_block.used,
+.animation_fastslots_block.none {
+    position: relative;
+    border-radius: .5vw;
+    width: 4vw;
+    transition: opacity .3s;
+    height: 4vw;
+    margin-left: 1vw;
+    overflow: hidden;
+}
+
+.animation_fastslots_block svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1vw;
+    transform: translate(-50%,-50%);
+}
+
+.animation_left_cats_cat {
+    position: relative;
+    width: 100%;
+    margin-top: .25vw;
+    top: 2vw;
+    height: 2.5vw;
+    border-radius: .5vw;
+    background: rgba(22,21,35)
+}
+
+.animation_left_anims_block a {
+    position: absolute;
+    bottom: 1vw;
+    left: .5vw;
+    text-align: left;
+    width: 6vw;
+    font-size: .65vw;
+}
+
+.animation_played {
+    position: absolute;
+    top: 60%;
+    transform: translate(0,-50%);
+    text-align: right;
+    right: 1vw;
+}
+
+    .animation_played a {
+        color: #fff;
+        font-size: .8vw;
+        opacity: .5;
+    }
+
+    .animation_played p {
+        color: #6ba8f9;
+        font-size: 2vw;
+        font-weight: 500;
+        /* background: red; */
+        width: 20vw;
+    }
+
+.animation_left_anims_block p {
+    position: absolute;
+    top: .5vw;
+    right: .5vw;
+    font-size: .6vw;
+}
+
+.animation_left_cats_cat .animation_left_cats_cat_num {
+    position: absolute;
+    top: 50%;
+    left: .75vw;
+    transform: translate(0,-50%);
+    width: 1vw;
+    text-align: center;
+    line-height: 1.1vw;
+    border-radius: .2vw;
+    font-size: .6vw;
+    height: 1vw;
+    background: #ffffff20;
+}
+
+.animation_left_cats_cat a {
+    position: absolute;
+    left: 2.5vw;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: .7vw;
+}
+
+.animation_left_anims {
+    position: absolute;
+    left: 14vw;
+    /* background: red; */
+    width: 23vw;
+    display: flex;
+    flex-wrap: wrap;
+    top: 6%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 90%;
+}
+
+.animation_left_anims_block:hover {
+    background: #438cef;
+}
+
+.animation_left_anims_block {
+    position: relative;
+    width: 7vw;
+    height: 7vw;
+    margin-top: .4vw;
+    top: -.4vw;
+    margin-left: .4vw;
+    left: -.4vw;
+    overflow: hidden;
+    background: rgba(22, 21, 35);
+    border-radius: .5vw;
+}
+
+    .animation_left_anims_block img {
+        position: absolute;
+        top: 90%;
+        width: 8vw;
+        left: 70%;
+        pointer-events: none;
+        opacity: .1;
+        transform: translate(-50%,-50%);
+    }
+
+.animation_fastslots header {
+    position: absolute;
+    right: 0;
+    top: -5vw;
+    float: right;
+    text-align: right;
+}
+
+    .animation_fastslots header h1 {
+        font-size: 1.4vw;
+        font-weight: 500;
+        text-shadow: 0 0 .3vw #00000050;
+    }
+
+    .animation_fastslots header p {
+        font-size: .7vw;
+        width: 20vw;
+        right: 0;
+        text-shadow: 0 0 .3vw #00000060;
+        opacity: .8;
+    }
+
+.showanim-enter-active {
+    animation: showAnimEnter .5s forwards;
+}
+
+.showanim-leave-active {
+    animation: showAnimLeave .5s forwards;
+}
+
+@keyframes showAnimEnter {
+    from {
+        opacity: 0;
+        transform: translate(50%, -50%);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes showAnimLeave {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: translate(50%, -50%);
+        opacity: 0;
+    }
+}

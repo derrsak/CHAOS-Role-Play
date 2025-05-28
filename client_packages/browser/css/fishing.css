@@ -1,0 +1,94 @@
+#fishing {
+    width: 80%;
+    height: 35%;
+    max-width: 760px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    user-select: none;
+}
+
+    #fishing .leftred {
+        margin-left: 20px; /* Отступы вокруг изображения */
+    }
+
+    #fishing .leftvoln {
+        margin-top: 14px;
+        margin-left: 20px;
+    }
+
+    #fishing .rightvoln {
+        margin-top: 14px;
+        margin-left: 190px;
+    }
+
+    #fishing .rightred {
+        margin-left: 50px; /* Отступы вокруг изображения */
+    }
+
+.fishing-line {
+    display: flex;
+    background: rgba(29, 29, 29, 0.9);
+    height: 50px;
+    width: 100%;
+    margin-top: 24.1%;
+    position: relative;
+    border-radius: 15px;
+    animation: react-show .1s ease-in-out;
+}
+
+
+#fishing-cursor {
+    width: 6%;
+    /* background: red; */
+    margin-top: 0.5%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.fishing-zone {
+    background: #88EC30;
+    border-radius: 15px;
+    height: 40%;
+    top: 30%;
+    position: absolute;
+}
+
+
+.fishing-wait {
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+    padding: 3%;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+
+.fishing-go {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 45%;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+
+#fishing .click {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: -20px;
+}

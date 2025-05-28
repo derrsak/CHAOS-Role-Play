@@ -1,0 +1,225 @@
+#auth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/auth/regfone.jpg');
+    font-family: 'Gilroy';
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    #auth .content {
+        position: absolute;
+        top: 51%;
+        left: 50%;
+        width: 400px;
+        height: auto;
+        transform: translate(-50%, -50%);
+    }
+
+    #auth .logo {
+        margin-top: -100px;
+        display: block;
+        user-select: none;
+    }
+
+    #auth .header {
+        margin-top: -25px;
+        color: #fff;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        user-select: none;
+    }
+
+    #auth .info {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.3;
+        user-select: none;
+    }
+
+    #auth .input-group {
+        margin-bottom: 8px;
+        position: relative;
+    }
+
+    #auth .line1 {
+        padding: 5px 0 20px 25px;
+    }
+
+    #auth .line2 {
+        padding: 5px 0 20px 25px;
+    }
+
+    #auth input {
+        margin-left: 25px;
+        box-sizing: border-box;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        outline: none;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 20px 60px;
+        height: 60px;
+        width: 88%;
+    }
+
+        #auth input:hover {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        #auth input:focus + label,
+        #auth input:not(:placeholder-shown) + label {
+            margin-top: -18px;
+            font-size: 14px;
+            transition-duration: 0.25s;
+            user-select: none;
+        }
+
+        #auth input::selection {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+    #auth label {
+        font-weight: 500;
+        line-height: 19px;
+        opacity: 0.3;
+        transition: 0.25s ease all;
+        position: absolute;
+        font-size: 16px;
+        left: 85px;
+        top: 20px;
+        color: #999;
+        pointer-events: none;
+        user-select: none;
+    }
+
+
+
+    #auth .regAcc {
+        background: #DC2323;
+        border: none;
+        border-radius: 2px;
+        color: #ffff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.83px;
+        width: 88%;
+        height: 61px;
+        margin-left: 25px;
+        user-select: none;
+    }
+
+        #auth .regAcc:hover {
+            background: #FB4949;
+        }
+
+        #auth .regAcc:active {
+            background: #FF6262;
+        }
+
+    #auth .regAccountBtn {
+        color: rgba(255, 255, 255, 0.3);
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: 25px;
+        line-height: 19px;
+        width: 88%;
+        height: 50px;
+        outline: none;
+        user-select: none;
+        margin-top: 7px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        pointer-events: auto;
+    }
+
+        #auth .regAccountBtn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        #auth .regAccountBtn:active {
+            background: rgba(255, 255, 255, 0.3);
+            color: rgba(255, 255, 255, 1);
+        }
+
+    #auth .authAccount,
+    #auth .regAccount,
+    #auth .recoveryAccount,
+    #auth .confirmEmail {
+        width: 100%;
+    }
+
+        #auth .authAccount a,
+        #auth .regAccount a,
+        #auth .recoveryAccount a,
+        #auth .confirmEmail a {
+            position: relative;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            opacity: 0.3;
+            user-select: none;
+            left: 69px;
+            top: 16px;
+        }
+
+    #auth span {
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: auto;
+    }
+
+    #auth .authAccount a:hover,
+    #auth .regAccount a:hover,
+    #auth .recoveryAccount a:hover,
+    #auth .confirmEmail a:hover {
+        opacity: 0.5;
+    }
+
+    #auth .authAccount a:active,
+    #auth .regAccount a:active,
+    #auth .recoveryAccount a:active,
+    #auth .confirmEmail a:active {
+        opacity: 1.0;
+    }
+
+    #auth .ic-login,
+    #auth .ic-password,
+    #auth .ic-email {
+        position: absolute;
+        left: 45px;
+        top: 50%;
+        transform: translateY(-50%);
+        user-select: none;
+        pointer-events: none;
+    }
+
+    #auth .square {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 35px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }

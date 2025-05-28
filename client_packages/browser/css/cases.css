@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#roulette {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#roulette .roulette-body {
+  width: 65%;
+}
+
+#roulette .roulette-header {
+  font-family: Inter;
+  font-size: 3vh;
+  font-weight: 600;
+  color: #0061CF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#roulette .roulette-spinner {
+  margin: 10px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#roulette .roulette-spinner .roulette-selector {
+  width: 3px;
+  background:grey;
+  left: 50%;
+  height: 156px;
+  transform: translate(-50%,0%);
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#roulette .roulette-spinner .roulette-wheel {
+  display: flex;
+}
+
+#roulette .roulette-spinner .roulette-wheel .roulette-row {
+  display: flex;
+}
+
+#roulette .roulette-spinner .roulette-wheel .roulette-row .roulette-card {
+  height: 150px;
+  width: 150px;
+  margin: 3px;
+  border-radius: 8px;
+  border-bottom: 3px solid rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:rgb(255, 0, 0);
+  font-size: 1.5em;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#roulette .roulette-card.green {
+  background:#3a9722dc;
+}
+
+#roulette .roulette-card.blue {
+  background:#4870b6dc;
+}
+
+#roulette .roulette-card.orange {
+  background:#ec6d05dc;
+}
+
+#roulette .roulette-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2vh;
+}
+
+#roulette .roulette-button button {
+  background: linear-gradient(180deg, #0061CF 0%, #004EA7 100%);
+  border: none;
+  border-radius: 2vh;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  margin-bottom: 1vh;
+  margin-left: 1vh;
+  outline: none;
+  position: relative;
+  height: 5vh;
+  width: 20vh;
+
+  color: white;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+#roulette .roulette-button .openbtn::after {
+  top: 0; left: 0; bottom: 0; right: 0;
+  border: .83vh solid rgba(0, 0, 0, .04);
+  border-radius: 2vh;
+}
+
+#roulette .roulette-button .openbtn:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
+              linear-gradient(180deg, #0061CF 0%, #004EA7 100%);
+}
+
+#roulette .roulette-button .openbtn:hover::after {
+  border: .83vh solid rgba(0, 0, 0, .075);
+}
+
+#roulette .roulette-button .openbtn:disabled {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%), linear-gradient(180deg, #0050AA 0%, #003674 100%);
+}
+
+#roulette .roulette-button .openbtn:disabled::after {
+  border: .83vh solid rgba(255, 255, 255, .05);
+}
+
+#roulette .roulette-button .closebtn {
+  background: linear-gradient(180deg, #49678a 0%, #364d68 100%);
+}
+
+#roulette .roulette-button .closebtn:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
+              linear-gradient(180deg, #49678a 0%, #364d68 100%);
+}
+
+#roulette .roulette-button .closebtn:disabled {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%), linear-gradient(180deg, #49678a 0%, #364d68 100%);
+}
+
+
+#roulette .roulette-body .btn {
+  border: none;
+  border-radius: 2vh;
+  cursor: pointer;
+  font-family: Inter;
+  margin-bottom: 1vh;
+  margin-left: 1vh;
+  margin: 10px;
+  outline: none;
+  height: 5vh;
+  width: 20vh;
+
+  color: white;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+#roulette .roulette-body .btn.btn-green {
+  background: linear-gradient(180deg, #01a337 0%, #27a700 100%);
+}
+
+#roulette .roulette-body .btn.btn-blue {
+  background: linear-gradient(180deg, #0061CF 0%, #004EA7 100%);
+}
+
+#roulette .roulette-body .btn.btn-green:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
+              linear-gradient(180deg, #01a337 0%, #27a700 100%);
+}
+
+#roulette .roulette-body .btn.btn-blue:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
+              linear-gradient(180deg, #0061CF 0%, #004EA7 100%);
+}
+
+#roulette .roulette-body .modal-backdrop {
+  font-family: Inter;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+#roulette .roulette-body .result {
+  background: #ffffff;
+  box-shadow: 2px 2px 20px 1px;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+#roulette .roulette-body .modal-header {
+  border-bottom: 1px solid #eeeeee;
+  color: #4aae9b;
+  justify-content: space-between;
+  display: flex;
+  padding: 15px; 
+}
+
+#roulette .roulette-body .modal-footer {
+  display: flex;
+  border-top: 1px solid #eeeeee;
+  justify-content: center;
+}
+
+#roulette .roulette-body .modal-body {
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#roulette .roulette-body .modal-body .body-img {
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#roulette .roulette-body .modal-body .body-name {
+  font-size: 1.6vh;
+  font-weight: 500;
+}
+
+#roulette .roulette-body .modal-fade-enter,
+#roulette .roulette-body .modal-fade-leave-active {
+  opacity: 0;
+}
+
+#roulette .roulette-body .modal-fade-enter-active,
+#roulette .roulette-body .modal-fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+

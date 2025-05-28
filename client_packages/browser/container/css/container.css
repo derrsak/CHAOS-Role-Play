@@ -1,0 +1,388 @@
+#main {
+-webkit-user-select: none;	
+}
+
+#main .bg {
+position: absolute;
+width: 1000px;
+height: 650px;
+left: 460.6px;
+top: 216.22px;
+background: #004B3E;
+border-radius: 40px;
+}
+#main .bg1 {
+position: absolute;
+width: 930px;
+height: 227px;
+left: 495.6px;
+top: 256.22px;
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+}
+
+.styled-image {
+position: absolute;
+width: 238px;
+height: 179px;
+left: 504.6px;
+top: 280.22px;
+}
+
+#main .classcont {
+position: absolute;
+width: 146px;
+height: 47px;
+left: 792.6px;
+top: 270.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+color: #000000;
+}
+
+#main .numbercont{
+position: absolute;
+width: 23px;
+height: 47px;
+left: 947.6px;
+top: 270.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+color: #000000;
+}
+
+#main .tecstavka {
+position: absolute;
+width: 180px;
+height: 28px;
+left: 798.6px;
+top: 340.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+#main .stavkamoney {
+position: absolute;
+width: 161px;
+height: 28px;
+left: 799.6px;
+top: 374.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+}
+
+#main .lasttext {
+position: absolute;
+width: 115px;
+height: 28px;
+left: 1019.6px;
+top: 340.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+#main .lasttime {
+position: absolute;
+width: 107px;
+height: 28px;
+left: 1027.6px;
+top: 379.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+#main .vvestideneg {
+position: absolute;
+width: 169px;
+height: 51px;
+left: 1216.6px;
+top: 312.22px;
+background: #6EADAD;
+opacity: 0.9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(255, 0, 0, 0.25);
+border-radius: 10px;
+}
+
+#main .vvestisumu {
+position: absolute;
+width: 150px;
+height: 28px;
+left: 1230.6px;
+top: 323.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+}
+
+#main .knopkastavit {
+position: absolute;
+width: 169px;
+height: 51px;
+left: 1216.6px;
+top: 393.22px;
+background: #24FF00;
+opacity: 0.9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(255, 0, 0, 0.25);
+border-radius: 10px;
+}
+#main .knopkastavit:hover {
+background: #FFF;
+}
+
+#main .textstavit {
+-webkit-user-select: none;
+position: absolute;
+left: 14.6px;
+top: 12.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #000000;
+}
+
+    #main .frame1 {
+position: absolute;
+width: 930px;
+height: 60px;
+left: 495.6px;
+top: 541.22px;
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+}
+
+#main .date {
+position: absolute;
+width: 55px;
+height: 28px;
+left: 540.6px;
+top: 557.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+}
+
+#main .time {
+position: absolute;
+width: 73px;
+height: 28px;
+left: 675.6px;
+top: 557.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+    }
+
+#main .playercont {
+position: absolute;
+width: 255px;
+height: 28px;
+left: 842.6px;
+top: 557.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+}
+
+#main .passivestavka {
+position: absolute;
+width: 80px;
+height: 28px;
+left: 1245.6px;
+top: 557.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+}
+
+#main .frame3 {
+    position: absolute;
+    width: 930px;
+    height: 58px;
+    left: 495.6px;
+    top: 607.22px;
+    background: #C2B6B6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+#main .datestavka {
+position: absolute;
+width: 129px;
+height: 28px;
+left: 511.6px;
+top: 622.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+}
+
+#main .timestavka {
+position: absolute;
+width: 61px;
+height: 28px;
+left: 677.6px;
+top: 622.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+}
+
+#main .nameplayer {
+position: absolute;
+width: 194px;
+height: 28px;
+left: 863.6px;
+top: 622.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+}
+
+#main .stavkaplayera {
+position: absolute;
+width: 161px;
+height: 28px;
+left: 1210.6px;
+top: 622.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+}
+
+#main .nevedimscroll {
+position: absolute;
+width: 5px;
+height: 253px;
+left: 1431.6px;
+top: 542.22px;
+background: #000000;
+border-radius: 28px;
+}
+
+#main .scroll {
+position: absolute;
+width: 3px;
+height: 122px;
+left: 1432.6px;
+top: 550.22px;
+background: #FFFFFF;
+border-radius: 28px;
+}
+
+#main .textesc {
+position: absolute;
+width: 104px;
+height: 28px;
+left: 1545.6px;
+top: 48.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: #FFFFFF;
+}
+
+#main .frame4 {
+position: absolute;
+width: 82px;
+height: 50px;
+left: 1661.6px;
+top: 38.22px;
+background: #FFFFFF;
+border-radius: 10px;
+}
+
+#main .esc {
+position: absolute;
+width: 49px;
+height: 28px;
+left: 1678.6px;
+top: 49.22px;
+font-family: 'TT Norms';
+font-style: italic;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+}
+
+#main .esctexti {
+position: absolute;
+width: 127px;
+height: 28px;
+left: 1754.6px;
+top: 48.22px;
+font-family: 'TT Norms';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: #FFFFFF;
+}
+

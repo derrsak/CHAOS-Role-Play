@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link href="http://fonts.cdnfonts.com/css/digital-7-mono" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <audio id="loading" autoplay="autoplay" volume="-20000" loop="loop"><source src="https://cdn.discordapp.com/attachments/827486630444269647/906207711971147816/Coffin-Dance-_Astronomia_-Folk-Metal-Cover-by-Alina-Gingertail-_-Dryante.mp3" type="audio/mp3"></audio> -->
+    <!-- <audio id="loading" autoplay="autoplay" volume="-20000" loop="loop"><source src="https://cdn.discordapp.com/attachments/827486630444269647/906126668748431370/Rx-Beats-Merry-Christmas-and-Happy-New-Year-_-Merry-Christmas-trap.mp3" type="audio/mp3"></audio> -->
+	<audio id="loading" autoplay="autoplay" volume="-20000" loop="loop"><source src="https://cdn.discordapp.com/attachments/827486630444269647/906124207962853376/intro.mp3" type="audio/mp3"></audio>
+	<script>var audio=document.querySelector("audio"); audio.volume=0.4;</script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.core.min.js"></script>
+<script>
+	function Volumesound(count) {
+		audio.volume = count;
+	}
+	function playSound(music) {
+        var sound = new Howl({
+            src: [music],
+            loop: false,
+            volume: 0.5
+        })
+        var succes = new Howl({
+			src: ['./sounds/succes.mp3'],
+			loop: false,
+			volume: 0.2
+		})
+		var buckle = new Howl({
+			src: ['./sounds/buckle.ogg'],
+			loop: false,
+			volume: 0.7
+		})
+		var unbuckle = new Howl({
+			src: ['./sounds/unbuckle.ogg'],
+			loop: false,
+			volume: 0.7
+		})
+		var error = new Howl({
+			src: ['./sounds/error.mp3'],
+			loop: false,
+			volume: 0.2
+		})
+		var open_inv = new Howl({
+            src: ['./sounds/open_inv.ogg'],
+            loop: false,
+            volume: 0.7
+		})
+        var close_inv = new Howl({
+            src: ['./sounds/close_inv.ogg'],
+            loop: false,
+            volume: 0.7
+        })
+		var bong = new Howl({
+			src: ['./sounds/bong.mp3'],
+			loop: false,
+			volume: 0.4
+		})
+        var cash_pay = new Howl({
+            src: ['./sounds/cash_pay.mp3'],
+            loop: false,
+            volume: 0.4
+		})
+        var bank_pay = new Howl({
+            src: ['./sounds/bank_pay.mp3'],
+            loop: false,
+            volume: 0.4
+        })
+		switch(music){
+			case "succes":
+				sound.play()
+			break;
+			case "buckle":
+				buckle.play()
+			break;
+			case "unbuckle":
+				unbuckle.play()
+			break;
+			case "error":
+				error.play()
+			break;
+			case "bong":
+				bong.play()
+			break;
+            case "open_inv":
+                open_inv.play()
+			break;
+            case "close_inv":
+                close_inv.play()
+			break;
+            case "bank_pay":
+                bank_pay.play()
+			break;
+            case "cash_pay":
+                cash_pay.play()
+            break;
+		}
+        sound.play()
+	}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+

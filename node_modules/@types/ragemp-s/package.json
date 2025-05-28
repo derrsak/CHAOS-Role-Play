@@ -1,0 +1,8 @@
+{
+	"name": "@types/ragemp-s",
+	"version": "0.2.25",
+	"author": "CocaColaBear",
+	"description": "Rage:MP TypeScript type definition for Serverside",
+	"license": "MIT",
+	"repository": "https://github.com/CocaColaBear/types-ragemp-s.git"
+}

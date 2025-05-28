@@ -1,0 +1,114 @@
+#timer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: 'Gilroy';
+    user-select: none;
+}
+
+    #timer .death {
+        position: fixed;
+        top: 84%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+        height: 80vh;
+        max-width: 313px;
+        max-height: 301px;
+        justify-items: center;
+    }
+
+    #timer .deathtitle {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 49px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #CC3300;
+    }
+
+    #timer .killername {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+    }
+
+    #timer .time {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+    }
+
+    #timer .button-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #timer .info {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+    }
+
+    #timer .span {
+        color: #CC3300;
+    }
+
+    #timer button {
+        width: 8.5rem;
+        height: 2.125rem;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: rgba(204, 51, 0, 0.85);
+        background: #1B1B1B;
+        border-radius: 5px;
+        border: none;
+        white-space: nowrap;
+    }
+
+        #timer button:active {
+            color: #ffffff;
+            background: #CC3300;
+        }
+
+        #timer button:disabled {
+            color: rgba(155, 39, 0, 0.76);
+            background: rgba(27, 27, 27, 0.8);
+        }
+
+    #timer .progress {
+        width: 100%;
+        height: 7px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 7px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+    }
+
+        #timer .progress .fill {
+            height: 100%;
+            background: #CC3300;
+            border-radius: 4px;
+            transition: width 0.5s;
+        }

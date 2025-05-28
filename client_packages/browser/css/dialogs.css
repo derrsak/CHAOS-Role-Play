@@ -1,0 +1,200 @@
+#dialogs *, 
+#dialogs *::before, 
+#dialogs *::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* html, body {
+  height: 100%;
+} */
+
+#dialogs .dialogs {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#dialogs .dialogs-wrapper {
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#dialogs .dialogs {
+  height: 100%;
+  padding: 0 0 5.556vmin 5.556vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#dialogs .dialogs-main {
+  position: relative;
+  width: 77.315vmin;
+  padding: 6.296vmin 2.593vmin 2.963vmin 2.593vmin;
+}
+#dialogs .dialogs-main::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: radial-gradient(160% 160% at center, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 160%);
+  filter: blur(3.704vmin);
+  z-index: -1;
+  pointer-events: none;
+}
+
+#dialogs .dialogs-main__content {
+  padding: 2.778vmin 2.315vmin 2.315vmin;
+  background: 0 0/100% 100% url(../img/dialogs/dialogs-content__background.png) no-repeat;
+  margin: 2.315vmin 0;
+}
+#dialogs .dialogs-main__content:first-child {
+  margin-top: 0;
+}
+#dialogs .dialogs-main__content:last-child {
+  margin-bottom: 0;
+}
+
+#dialogs .dialogs-main__content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.852vmin 0;
+}
+#dialogs .dialogs-main__content-header:first-child {
+  margin-top: 0;
+}
+#dialogs .dialogs-main__content-header:last-child {
+  margin-bottom: 0;
+}
+#dialogs .dialogs-main__content-header > p {
+  font-weight: 500;
+  font-size: 3.704vmin;
+  line-height: 4.167vmin;
+  color: #ffd37e;
+  text-shadow: 0 0 1.111vmin #ffd37e, 0 0 0.37vmin rgba(255, 211, 126, 0.4);
+}
+#dialogs .dialogs-main__content-header > svg {
+  display: block;
+  width: 4.63vmin;
+  height: 2.315vmin;
+  fill: #ffd37e;
+  filter: drop-shadow(0 0 1.111vmin #ffd37e) drop-shadow(0 0 0.37vmin rgba(255, 211, 126, 0.4));
+}
+#dialogs .dialogs-main__content-header > svg:last-child {
+  transform: scale(-1, 1);
+}
+#dialogs .dialogs-main__content-header > * {
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 1.852vmin;
+}
+#dialogs .dialogs-main__content-header > *:last-child {
+  margin-right: 0;
+}
+
+#dialogs .dialogs-main__content-text {
+  margin: 1.852vmin 0;
+}
+#dialogs .dialogs-main__content-text:first-child {
+  margin-top: 0;
+}
+#dialogs .dialogs-main__content-text:last-child {
+  margin-bottom: 0;
+}
+#dialogs .dialogs-main__content-text > p {
+  font-weight: 600;
+  font-size: 1.852vmin;
+  line-height: 2.87vmin;
+  color: white;
+  margin: 2.778vmin 0;
+}
+#dialogs .dialogs-main__content-text > p:first-child {
+  margin-top: 0;
+}
+#dialogs .dialogs-main__content-text > p:last-child {
+  margin-bottom: 0;
+}
+
+#dialogs .dialogs-buttons {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-between;
+  grid-row-gap: 2.315vmin;
+  margin: 2.315vmin 0;
+}
+#dialogs .dialogs-buttons:first-child {
+  margin-top: 0;
+}
+#dialogs .dialogs-buttons:last-child {
+  margin-bottom: 0;
+}
+
+#dialogs .dialogs-buttons__item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+#dialogs .dialogs-buttons__item > p {
+  font-weight: 500;
+  font-size: 2.222vmin;
+  color: #e2cba6;
+  word-break: normal;
+  white-space: pre-line;
+}
+#dialogs .dialogs-buttons__item > * {
+  margin-right: 1.111vmin;
+}
+#dialogs .dialogs-buttons__item > *:last-child {
+  margin-right: 0;
+}
+
+#dialogs .dialogs-buttons__item-number {
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 4.63vmin;
+  height: 2.407vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.093vmin solid #ffd37e;
+  border-radius: 0.331vmin;
+}
+
+#dialogs .dialogs-buttons__item-main {
+  width: 3.889vmin;
+  height: 1.852vmin;
+  background-color: #1f1d19;
+  border-radius: 0.185vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.759vmin;
+  line-height: 2.778vmin;
+  color: #ffd37e;
+}
+
+#dialogs .dialogsFade-enter-from,
+#dialogs .dialogsFade-leave-to {
+  opacity: 0;
+}
+
+#dialogs .dialogsFade-enter-active,
+#dialogs .dialogsFade-leave-active {
+  transition: 0.5s opacity ease;
+  pointer-events: none;
+}

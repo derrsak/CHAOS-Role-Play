@@ -1,0 +1,112 @@
+.casino-bet {
+    position: absolute;
+    font-family: 'Montserrat';
+    width: 100%;
+    height: 15%;
+    left: 50%;
+    top: 85%;
+    overflow: hidden;
+    z-index: 10;
+    user-select: none;
+    transform: translateX(-50%);
+    background: linear-gradient(0deg, rgba(11, 14, 20, 0.9) 0%, rgba(11, 14, 20, 0) 100%);
+}
+
+.bet-control {
+    margin-left: 41.19rem;
+    margin-top: 3.1rem;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+}
+
+.bet-button {
+    background: rgba(70, 65, 65, 0.75);
+    border-radius: 5px;
+    width: 34px;
+    height: 33px;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+    .bet-button:active {
+        background-color: #666;
+    }
+
+.bet-input {
+    z-index: 20;
+    border: none;
+    background: rgba(39, 39, 39, 0.75);
+    border-radius: 5px;
+    width: 108px;
+    height: 33px;
+    text-align: center;
+    margin: 0 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+}
+
+.info-container {
+    position: absolute;
+    bottom: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.balance-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.bet-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.text-esc {
+    color: #FF0000;
+}
+
+.bet-time {
+    position: absolute;
+    bottom: 5.5rem; /* Совпадает с info-container */
+    right: 42rem; /* Отступ справа */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.bet-input::-webkit-inner-spin-button,
+.bet-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input::selection {
+    background: rgba(255, 255, 255, 0.15);
+}
